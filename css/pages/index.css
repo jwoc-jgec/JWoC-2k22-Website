@@ -1,0 +1,1739 @@
+/* **************************** Main Page Styles **************************** */
+
+/* **************************** Banner Section **************************** */
+
+section#banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../../assets/img/banner_bg.png) no-repeat 50% 50% / cover,
+        linear-gradient(45deg, #061e35, #05192d, #061e35);
+}
+
+section#banner div#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section#banner div.banner {
+    margin: 10rem auto 6rem;
+    padding: 4rem 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    backdrop-filter: blur(2px);
+    background: rgba(6, 30, 53, 0.6);
+    box-shadow: 0 8px 16px rgba(5, 26, 43, 0.6);
+}
+
+section#banner div.banner .logos {
+    margin: 4rem auto 8rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    z-index: 1;
+}
+
+section#banner div.banner .logos span.blur {
+    position: absolute;
+    width: 19rem;
+    height: 19rem;
+    backdrop-filter: blur(2px);
+    background: rgba(62, 100, 255, 0.2);
+    box-shadow: 0 0 8px rgba(5, 26, 43, 0.6);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+section#banner div.banner .logos img.jwoc {
+    position: relative;
+    width: 18rem;
+    height: auto;
+    z-index: 1;
+}
+
+section#banner div.banner .logos img.tech {
+    position: absolute;
+    width: 25rem;
+    height: auto;
+    z-index: -2;
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+section#banner div.banner object {
+    margin: 2rem auto;
+    width: 60%;
+    height: auto;
+    user-select: none;
+}
+
+section#banner div.banner h2 {
+    margin: 1rem auto;
+    font-size: 5rem;
+    font-weight: 600;
+    font-family: "Anurati";
+    color: var(--primaryoff);
+    -webkit-text-stroke: 1px var(--primaryoff);
+    letter-spacing: 10px;
+    text-align: center;
+    line-height: 4.5rem;
+    user-select: none;
+}
+
+section#banner div.banner p {
+    margin: 2rem auto;
+    padding: 1rem 20rem;
+    font-size: 2.6rem;
+    font-weight: 500;
+    font-family: var(--codefont);
+    color: var(--lightwhite);
+    text-align: center;
+    letter-spacing: 0.5px;
+    line-height: 4rem;
+}
+
+section#banner div.banner p span {
+    display: block;
+    margin: 2rem auto 0;
+    padding: 0 1.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: var(--curlfont);
+    color: var(--darkblack);
+    background: var(--primaryoff);
+    width: fit-content;
+    border-radius: 20px;
+}
+
+section#banner div.banner .org_grp span {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.5rem 2rem;
+    width: fit-content;
+    font-size: 2.2rem;
+    font-weight: 600;
+    font-family: var(--mainfont);
+    color: var(--lightblack);
+    background: var(--lightwhite);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 20px;
+    letter-spacing: 0.8px;
+}
+
+/* **************************** Responsive **************************** */
+
+@media (max-width: 1240px) {
+    section#banner div.banner h2 {
+        font-size: 3rem;
+    }
+    section#banner div.banner p {
+        padding: 1rem 8rem;
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    section#banner div.banner {
+        padding: 4rem 2rem;
+    }
+    section#banner div.banner object {
+        width: 80%;
+    }
+    section#banner div.banner .logos span.blur {
+        width: 16rem;
+        height: 16rem;
+    }
+    section#banner div.banner .logos img.jwoc {
+        width: 15rem;
+    }
+    section#banner div.banner .logos img.tech {
+        width: 22rem;
+    }
+    section#banner div.banner h2 {
+        font-size: 3rem;
+    }
+    section#banner div.banner p {
+        padding: 1rem 2rem;
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+    section#banner div.banner .org_grp span {
+        font-size: 2rem;
+    }
+}
+
+/* **************************** Section Common Headings **************************** */
+
+section#about div.heading,
+section#register div.heading,
+section#timeline div.heading,
+section#projects div.heading,
+section#team div.heading,
+section#sponsors div.heading,
+section#faqs div.heading,
+section#contact div.heading {
+    position: relative;
+    margin: auto 4rem;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+section#about div.heading h1,
+section#register div.heading h1,
+section#timeline div.heading h1,
+section#projects div.heading h1,
+section#team div.heading h1,
+section#sponsors div.heading h1,
+section#faqs div.heading h1,
+section#contact div.heading h1 {
+    padding: 0.5rem 1rem 1.5rem;
+    width: fit-content;
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-family: "Blanka";
+    color: var(--lightblack);
+    letter-spacing: 2px;
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 10px rgba(50, 69, 107, 0.2);
+}
+
+section#about div.heading span.pseudo,
+section#register div.heading span.pseudo,
+section#timeline div.heading span.pseudo,
+section#projects div.heading span.pseudo,
+section#team div.heading span.pseudo,
+section#sponsors div.heading span.pseudo,
+section#faqs div.heading span.pseudo,
+section#contact div.heading span.pseudo {
+    position: absolute;
+    top: -2rem;
+    left: -2rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 3rem;
+    background: var(--primarylight);
+    z-index: -1;
+}
+
+section#about div.heading span.divider_1,
+section#register div.heading span.divider_1,
+section#timeline div.heading span.divider_1,
+section#projects div.heading span.divider_1,
+section#team div.heading span.divider_1,
+section#sponsors div.heading span.divider_1,
+section#faqs div.heading span.divider_1,
+section#contact div.heading span.divider_1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0.5rem;
+    border-radius: 2px;
+    background: var(--primarylight);
+    z-index: -1;
+}
+
+section#about div.heading span.divider_2,
+section#register div.heading span.divider_2,
+section#timeline div.heading span.divider_2,
+section#projects div.heading span.divider_2,
+section#team div.heading span.divider_2,
+section#sponsors div.heading span.divider_2,
+section#faqs div.heading span.divider_2,
+section#contact div.heading span.divider_2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0.5rem;
+    height: 100vh;
+    border-radius: 2px;
+    background: var(--primarylight);
+    z-index: -1;
+}
+
+/* **************************** About Section **************************** */
+
+section#about {
+    position: relative;
+    margin: 10rem auto;
+}
+
+section#about::before {
+    content: "";
+    position: absolute;
+    top: 15%;
+    right: 12%;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 5rem;
+    background: var(--primarylight);
+    opacity: 0.8;
+}
+
+/* =============== About Description/Desc =============== */
+
+section#about div.about {
+    position: relative;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#about div.about .fig {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+section#about div.about .fig img {
+    margin: auto;
+    margin-top: 10rem;
+    margin-left: 4rem;
+    width: 50%;
+    height: auto;
+}
+
+section#about div.about .desc {
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 4rem;
+    width: 60%;
+    border-radius: 20px;
+    backdrop-filter: blur(6px);
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 8px 16px rgba(50, 69, 107, 0.2);
+}
+
+section#about div.about .desc h2 {
+    position: relative;
+    margin: 2rem 0;
+    font-size: 4rem;
+    font-weight: 500;
+    font-family: var(--codefont);
+    color: var(--lightblack);
+    text-align: left;
+    letter-spacing: 0.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#about div.about .desc h2 span {
+    margin: auto;
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 2.5rem;
+    color: var(--darkwhite);
+    background: var(--primarylight);
+    border-radius: 10px;
+    user-select: none;
+}
+
+section#about div.about .desc h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -30%;
+    height: 1rem;
+    width: 80%;
+    background: linear-gradient(45deg, var(--primarylight), var(--darkwhite));
+    border-radius: 4px;
+}
+
+section#about div.about .desc p {
+    margin: 2rem auto;
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: var(--mainfont);
+    color: var(--lightblack);
+    text-align: justify;
+    letter-spacing: 0.5px;
+}
+
+section#about div.about .desc a.btn {
+    margin: 1rem 0;
+    padding: 1rem 2rem 0.8rem;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: var(--curlfont);
+    color: var(--darkwhite);
+    background: linear-gradient(45deg, var(--primarylight), var(--primarydark));
+    background-size: 200%;
+    outline: none;
+    border: none;
+    text-align: justify;
+    letter-spacing: 0.5px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+section#about div.about .desc a.btn:hover {
+    background-position: bottom right;
+}
+
+/* =============== About Information/Info =============== */
+
+section#about div.info {
+    position: relative;
+    margin: 15rem auto 5rem;
+}
+
+section#about div.info h3 {
+    position: relative;
+    margin: 2rem auto;
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-family: "Blanka";
+    color: var(--lightblack);
+    letter-spacing: 6px;
+    text-align: center;
+}
+
+section#about div.info h3 span {
+    color: var(--primarylight);
+}
+
+section#about div.info .content {
+    margin: 1rem auto 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#about div.info img {
+    margin: auto -6rem;
+    width: 15rem;
+    height: auto;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+section#about div.info .info_card {
+    margin: 2rem 4rem;
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 8px 16px rgba(50, 69, 107, 0.2);
+}
+
+section#about div.info .info_card i {
+    margin: auto;
+    font-size: 5rem;
+    color: var(--lightblack);
+}
+
+section#about div.info .info_card h4 {
+    margin: 1rem 0;
+    font-size: 2.6rem;
+    font-weight: 500;
+    font-family: var(--codefont);
+    color: var(--lightblack);
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+section#about div.info .info_card a.btn {
+    margin: 1rem 0;
+    padding: 0.6rem 1.6rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: var(--curlfont);
+    color: var(--darkwhite);
+    background: var(--primarylight);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    letter-spacing: 0.5px;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+section#about div.info .info_card a.btn:hover {
+    background: var(--primarydark);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* **************************** Responsive **************************** */
+
+@media (max-width: 1240px) {
+    section#about div.about .desc {
+        right: 5%;
+        width: 80%;
+    }
+    section#about div.info {
+        margin: 20rem auto 5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    section#about div.about {
+        flex-direction: column;
+    }
+    section#about div.info {
+        margin: 15rem auto 5rem;
+    }
+    section#about div.about .fig img {
+        margin-top: auto;
+        margin-left: auto;
+    }
+    section#about div.about .desc {
+        margin: 2rem auto;
+        right: 0;
+        width: 95%;
+        position: relative;
+    }
+    section#about::before {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    section#about div.info .content {
+        flex-direction: column;
+    }
+    section#about div.info img {
+        margin: -8rem auto;
+    }
+    section#about div.info .info_card {
+        width: 90%;
+    }
+}
+
+@media (max-width: 472px) {
+    section#about div.heading {
+        margin: auto 2rem;
+    }
+    section#about div.about .desc {
+        padding: 4rem 2rem;
+    }
+    section#about div.info {
+        margin: 10rem auto 5rem;
+    }
+}
+
+/* **************************** Stats Section **************************** */
+
+section#stats {
+    position: relative;
+    margin: 5rem auto;
+}
+
+section#stats div.stats {
+    margin: 2rem auto;
+    padding: 8rem 2rem;
+    background: rgba(62, 100, 255, 0.9) url(../../assets/img/pattern_bg.png)
+        fixed center / 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section#stats div.stats .stats_card {
+    margin: 2rem;
+    padding: 2rem 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 8px 16px rgba(50, 69, 107, 0.2);
+    transition: all 0.4s ease;
+}
+
+section#stats div.stats .stats_card:hover {
+    transform: translateY(-2rem);
+}
+
+section#stats div.stats .stats_card i {
+    margin: 1rem auto auto;
+    padding: 1.5rem;
+    font-size: 4rem;
+    color: var(--darkwhite);
+    background: var(--primarylight);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+section#stats div.stats .stats_card p {
+    margin: 1rem auto 0;
+    font-size: 2.2rem;
+    font-weight: 600;
+    font-family: var(--mainfont);
+    color: var(--lightblack);
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+section#stats div.stats .stats_card h4 {
+    margin: 0.5rem auto;
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: var(--mainfont);
+    color: var(--darkblack);
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+section#stats div.stats .stats_card span {
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: var(--mainfont);
+    font-style: italic;
+    color: var(--darkgrey);
+}
+
+/* **************************** Responsive **************************** */
+
+@media (max-width: 992px) {
+    section#stats div.stats {
+        padding: 6rem 2rem;
+    }
+    section#stats div.stats .stats_card i {
+        padding: 1rem;
+        font-size: 3.5rem;
+    }
+    section#stats div.stats .stats_card p {
+        font-size: 2rem;
+    }
+    section#stats div.stats .stats_card h4 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 552px) {
+    section#stats div.stats {
+        padding: 4rem 1rem;
+    }
+    section#stats div.stats .stats_card {
+        margin: 2rem 1rem;
+        padding: 1rem 6rem;
+    }
+    section#stats div.stats .stats_card i {
+        font-size: 3rem;
+    }
+    section#stats div.stats .stats_card p {
+        font-size: 1.8rem;
+    }
+    section#stats div.stats .stats_card h4 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 472px) {
+    section#stats div.stats .stats_card {
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 412px) {
+    section#stats div.stats .stats_card {
+        padding: 1rem;
+    }
+}
+
+/* **************************** Registration Section **************************** */
+
+section#register {
+    position: relative;
+    margin: 20rem auto;
+}
+
+section#register div.heading h1 {
+    font-size: 3rem;
+}
+
+section#register div.sub_head {
+    position: relative;
+    margin: 4rem auto;
+}
+
+section#register div.sub_head h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: var(--mainfont);
+    color: var(--lightblack);
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+section#register div.details {
+    margin: 2rem 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#register div.details img.reg_img {
+    position: absolute;
+    margin: auto;
+    width: 30%;
+    height: auto;
+    z-index: -1;
+}
+
+section#register div.details .register_card {
+    margin: 2rem 4rem;
+    padding: 4rem 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 8px 14px rgba(50, 69, 107, 0.2);
+}
+
+section#register div.details .register_card img {
+    margin: auto;
+    width: 10rem;
+    height: auto;
+    z-index: 1;
+}
+
+section#register div.details .register_card h4 {
+    position: relative;
+    margin: 2rem auto;
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: var(--codefont);
+    color: var(--lightblack);
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+section#register div.details .register_card h4::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -30%;
+    height: 0.6rem;
+    width: 100%;
+    border-radius: 4px;
+    background: linear-gradient(
+        90deg,
+        var(--darkwhite),
+        var(--primarylight),
+        var(--darkwhite)
+    );
+}
+
+section#register div.details .register_card p {
+    margin: 1rem auto;
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: var(--mainfont);
+    color: var(--lightblack);
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+section#register div.details .register_card a.btn {
+    margin: 2rem auto 1rem;
+    padding: 0.8rem 1.6rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: var(--curlfont);
+    color: var(--darkwhite);
+    background: rgba(62, 100, 255, 1);
+    letter-spacing: 0.5px;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+section#register div.details .register_card a.btn:hover {
+    background: rgba(62, 100, 255, 0.8);
+}
+
+/* **************************** Responsive **************************** */
+
+@media (max-width: 992px) {
+    section#register div.details .register_card img {
+        width: 8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    section#register div.details {
+        flex-direction: column;
+    }
+    section#register div.details img.reg_img {
+        margin: -15rem auto -5rem;
+        width: 50%;
+    }
+    section#register div.details .register_card {
+        margin: 2rem;
+    }
+}
+
+@media (max-width: 572px) {
+    section#register div.heading {
+        margin: auto 2rem;
+    }
+    section#register div.heading h1,
+    section#register div.sub_head h2 {
+        font-size: 2.5rem;
+    }
+    section#register div.details {
+        margin: 2rem;
+    }
+    section#register div.details img.reg_img {
+        display: none;
+    }
+    section#register div.details .register_card img {
+        width: 6rem;
+    }
+    section#register div.details .register_card h4 {
+        font-size: 2.8rem;
+    }
+    section#register div.details .register_card a.btn {
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+}
+
+/* **************************** Timeline Section **************************** */
+
+section#timeline {
+    position: relative;
+    margin: 20rem auto;
+}
+
+section#timeline div.sub_head {
+    position: relative;
+    margin: 4rem auto 8rem;
+}
+
+section#timeline div.sub_head h3 {
+    margin: 1rem auto;
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: var(--mainfont);
+    color: var(--lightblack);
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+section#timeline div.sub_head p {
+    margin: 1rem auto;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: var(--codefont);
+    color: var(--darkgrey);
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+section#timeline div.sub_head p span {
+    padding: 0.2rem 1rem;
+    color: var(--darkwhite);
+    background: var(--primarylight);
+    border-radius: 20px;
+    user-select: none;
+}
+
+section#timeline div.details {
+    position: relative;
+    margin: 2rem 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+section#timeline div.details .fig {
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+section#timeline div.details .fig img {
+    margin: auto;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+section#timeline div.details .events {
+    position: relative;
+    margin: auto 4rem;
+    padding: 2rem 6rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+    border-left: 4px solid rgba(62, 100, 255, 0.8);
+}
+
+section#timeline div.details .events::before,
+section#timeline div.details .events::after {
+    position: absolute;
+    padding: 0.5rem 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: var(--mainfont);
+    color: var(--darkwhite);
+    text-align: center;
+    letter-spacing: 0.5px;
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content;
+}
+
+section#timeline div.details .events::before {
+    content: "Begin";
+    top: -1.5%;
+    left: -6%;
+    background: var(--lightgreen);
+}
+
+section#timeline div.details .events::after {
+    content: "Ended";
+    bottom: -1.5%;
+    left: -6.5%;
+    background: var(--lightorange);
+}
+
+section#timeline div.details .events .event_card {
+    position: relative;
+    margin: 2rem auto;
+    padding: 2rem 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(50, 69, 107, 0.2);
+}
+
+section#timeline div.details .events .event_card i {
+    position: absolute;
+    top: -5%;
+    left: -8.2rem;
+    width: 4rem;
+    height: 4rem;
+    background: var(--lightwhite);
+    border: 2px solid rgba(62, 100, 255, 0.6);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+section#timeline div.details .events .event_card i.bx {
+    padding: 2px;
+    font-size: 3rem;
+    color: var(--darkwhite);
+    background: var(--lightgreen);
+    border: 2px solid var(--darkwhite);
+}
+
+section#timeline div.details .events .event_card span {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: var(--mainfont);
+    color: var(--darkwhite);
+    background: var(--primarylight);
+    letter-spacing: 0.5px;
+    border-radius: 20px;
+    user-select: none;
+}
+
+section#timeline div.details .events .event_card h2 {
+    margin: 0 0 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: var(--mainfont);
+    color: var(--primarydark);
+    letter-spacing: 0.5px;
+}
+
+section#timeline div.details .events .event_card h4 {
+    position: relative;
+    margin: 0 0 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: var(--mainfont);
+    color: var(--lightblack);
+    letter-spacing: 0.5px;
+}
+
+section#timeline div.details .events .event_card h4::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -50%;
+    height: 4px;
+    width: 80%;
+    background: linear-gradient(45deg, var(--primarylight), var(--darkwhite));
+    border-radius: 4px;
+}
+
+section#timeline div.details .events .event_card p {
+    margin: 1.5rem 0 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: var(--curlfont);
+    font-style: italic;
+    color: var(--darkgrey);
+    letter-spacing: 0.5px;
+}
+
+/* **************************** Responsive **************************** */
+
+@media (max-width: 1240px) {
+    section#timeline div.details .events {
+        margin-right: 2rem;
+        padding-right: 0;
+    }
+    section#timeline div.details .events .event_card {
+        padding: 2rem 3rem;
+    }
+}
+
+@media (max-width: 992px) {
+    section#timeline div.sub_head {
+        margin: 4rem auto;
+        padding: 1rem 6rem;
+    }
+    section#timeline div.details {
+        flex-direction: column;
+    }
+    section#timeline div.details .fig {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section#timeline div.details .fig img {
+        width: 50%;
+    }
+    section#timeline div.details .events {
+        margin: auto;
+        padding: 2rem 3rem;
+        width: max-content;
+        background: rgba(247, 250, 252, 0.8);
+    }
+    section#timeline div.details .events .event_card i {
+        left: -5.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    section#timeline div.details {
+        margin: 2rem;
+    }
+    section#timeline div.details .events {
+        margin: auto 2rem;
+        width: fit-content;
+    }
+}
+
+@media (max-width: 472px) {
+    section#timeline div.heading {
+        margin: auto 2rem;
+    }
+    section#timeline div.details .events {
+        margin: auto 2rem;
+        padding-right: 0;
+        width: fit-content;
+    }
+    section#timeline div.details .events .event_card span {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: 1rem 0;
+    }
+    section#timeline div.details .events::before {
+        top: -1%;
+        left: -9%;
+    }
+    section#timeline div.details .events::after {
+        bottom: -1%;
+        left: -10.5%;
+    }
+}
+
+/* **************************** Projects Section **************************** */
+
+section#projects {
+    position: relative;
+    margin: 5rem auto 20rem;
+}
+
+section#projects div.heading span.divider_2 {
+    height: 50vh;
+}
+
+section#projects div.sub_head {
+    position: relative;
+    margin: 4rem auto;
+}
+
+section#projects div.sub_head h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: var(--mainfont);
+    color: var(--lightblack);
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+section#projects div.timer {
+    position: relative;
+    margin: 4rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section#projects div.timer .time {
+    margin: 2rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section#projects div.timer .time span {
+    font-size: 4.5rem;
+    font-weight: 600;
+    font-family: var(--codefont);
+    color: var(--lightblack);
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+section#projects div.timer .time p {
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: var(--mainfont);
+    color: var(--lightblack);
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* **************************** Responsive **************************** */
+
+@media (max-width: 992px) {
+    section#projects div.sub_head {
+        padding: 1rem 6rem;
+    }
+    section#projects div.sub_head h2 {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 472px) {
+    section#projects div.heading {
+        margin: auto 2rem;
+    }
+}
+
+/* **************************** Team Section **************************** */
+
+section#team {
+    position: relative;
+    margin: 10rem auto;
+}
+
+section#team div.members {
+    margin: 4rem;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section#team div.members .member_card {
+    position: relative;
+    margin: 2rem;
+    padding: 2rem;
+    width: 32rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background: rgba(62, 100, 255, 0.05);
+    box-shadow: 0 4px 4px rgba(50, 69, 107, 0.1);
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.4s ease;
+}
+
+section#team div.members .member_card:hover {
+    transform: translateY(-2rem);
+    background: rgba(62, 100, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(50, 69, 107, 0.2);
+}
+
+section#team div.members .member_card::before,
+section#team div.members .member_card::after {
+    content: "";
+    position: absolute;
+    top: -10rem;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    z-index: -1;
+    transition: all 0.2s ease;
+}
+
+section#team div.members .member_card::before {
+    left: -10rem;
+    border: 3px solid var(--lightgreen);
+}
+section#team div.members .member_card::after {
+    right: -5rem;
+    border: 3px solid var(--lightorange);
+}
+
+section#team div.members .member_card:hover::before,
+section#team div.members .member_card:hover::after {
+    border: 3px solid rgba(255, 255, 255, 0.6);
+}
+
+section#team div.members .member_card img {
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 60%;
+    height: auto;
+    background: rgba(62, 100, 255, 0.4);
+    border-radius: 20px;
+}
+
+section#team div.members .member_card h2 {
+    margin: 1rem auto 2rem;
+    font-size: 2.8rem;
+    font-weight: 500;
+    font-family: var(--codefont);
+    color: var(--lightblack);
+    text-align: center;
+    letter-spacing: 0.2px;
+    transition: all 0.2s ease;
+}
+
+section#team div.members .member_card:hover h2 {
+    color: var(--darkwhite);
+}
+
+section#team div.members .member_card p span {
+    margin: 1rem auto;
+    padding: 0.5rem 2rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: var(--mainfont);
+    color: var(--darkwhite);
+    background: var(--primarylight);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    translate: all 0.4s ease;
+}
+
+section#team div.members .member_card:hover p span {
+    color: var(--primarylight);
+    background: var(--darkwhite);
+}
+
+section#team div.members .member_card .social {
+    margin: 2rem auto 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#team div.members .member_card .social a {
+    margin: auto 1rem;
+    padding: 1rem;
+    font-size: 2.2rem;
+    color: var(--darkblack);
+    background: var(--darkwhite);
+    border-radius: 8px;
+    box-shadow: 0 0 4px rgba(50, 69, 107, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+section#team div.members .member_card .social a:hover {
+    color: var(--darkwhite);
+    background: var(--darkblack);
+}
+
+section#team div.members .member_card .social a i {
+    transition: transform 0.8s ease;
+}
+
+section#team div.members .member_card .social a:hover i {
+    transform: rotateY(1turn);
+}
+
+/* **************************** Responsive **************************** */
+
+@media (max-width: 992px) {
+    section#team div.members .member_card {
+        width: 30rem;
+    }
+    section#team div.members .member_card::before,
+    section#team div.members .member_card::after {
+        width: 25rem;
+        height: 25rem;
+    }
+    section#team div.members .member_card h2 {
+        font-size: 2.5rem;
+    }
+    section#team div.members .member_card p span {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 472px) {
+    section#team div.heading {
+        margin: auto 2rem;
+    }
+    section#team div.members {
+        padding: 2rem;
+    }
+}
+
+/* **************************** Sponsors Section **************************** */
+
+section#sponsors {
+    position: relative;
+    margin: 10rem auto;
+}
+
+section#sponsors div.heading h1 {
+    font-size: 3rem;
+}
+
+section#sponsors div.sub_head {
+    position: relative;
+    margin: 4rem auto;
+}
+
+section#sponsors div.sub_head h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: var(--mainfont);
+    color: var(--lightblack);
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+section#sponsors div.details {
+    margin: 8rem auto;
+}
+
+section#sponsors div.details .category {
+    margin: 6rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#sponsors div.details .category .title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section#sponsors div.details .category .title::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background: rgba(50, 69, 107, 0.1);
+    border-radius: 50%;
+}
+
+section#sponsors div.details .category .title img {
+    margin: auto;
+    width: 9rem;
+    height: auto;
+}
+
+section#sponsors div.details .category .title h4 {
+    margin: 1rem auto;
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-family: var(--codefont);
+    color: var(--lightblack);
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+section#sponsors div.details .category .sponsors {
+    padding: 0 4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section#sponsors div.details .category .sponsors h3 {
+    margin: auto;
+    font-size: 3.5rem;
+    font-weight: 500;
+    font-family: "Blanka";
+    color: var(--lightgrey);
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+/* **************************** Responsive **************************** */
+
+@media (max-width: 1240px) {
+    section#sponsors div.details .category .title img {
+        width: 8rem;
+    }
+    section#sponsors div.details .category .title h4 {
+        font-size: 2.2rem;
+    }
+    section#sponsors div.details .category .sponsors h3 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 992px) {
+    section#sponsors div.sub_head {
+        padding: 1rem 6rem;
+    }
+    section#sponsors div.details .category .title img {
+        width: 6rem;
+    }
+    section#sponsors div.details .category .title::after {
+        display: none;
+    }
+}
+
+@media (max-width: 472px) {
+    section#sponsors div.heading {
+        margin: auto 2rem;
+    }
+}
+
+/* **************************** FAQs Section **************************** */
+
+section#faqs {
+    position: relative;
+    margin: 10rem auto;
+}
+
+section#faqs div.sub_head {
+    position: relative;
+    margin: 4rem auto;
+}
+
+section#faqs div.sub_head h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: var(--mainfont);
+    color: var(--lightblack);
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+section#faqs div.faqs {
+    position: relative;
+    margin: 4rem auto;
+    max-width: 100rem;
+}
+
+section#faqs div.faqs .faq_card {
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 4px rgba(50, 69, 107, 0.2);
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+section#faqs div.faqs .faq_card:hover,
+section#faqs div.faqs .faq_card.active {
+    background: rgba(62, 100, 255, 0.9);
+}
+
+section#faqs div.faqs .faq_card i.bx {
+    margin: auto 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+    color: var(--darkwhite);
+    background: var(--darkblack);
+    border-radius: 6px;
+    transition: all 0.4s ease;
+}
+
+section#faqs div.faqs .faq_card:hover i.bx,
+section#faqs div.faqs .faq_card.active i.bx {
+    color: var(--darkblack);
+    background: var(--darkwhite);
+}
+
+section#faqs div.faqs .faq_card span h4 {
+    margin: 1rem auto;
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: var(--mainfont);
+    color: var(--darkblack);
+    text-align: left;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease;
+}
+
+section#faqs div.faqs .faq_card span p {
+    display: none;
+    margin: 2rem auto 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: var(--curlfont);
+    color: var(--lightblack);
+    text-align: left;
+    letter-spacing: 0.5px;
+}
+
+section#faqs div.faqs .faq_card:hover span h4,
+section#faqs div.faqs .faq_card:hover span p,
+section#faqs div.faqs .faq_card.active span h4,
+section#faqs div.faqs .faq_card.active span p {
+    color: var(--darkwhite);
+}
+
+/* **************************** Responsive **************************** */
+
+@media (max-width: 1240px) {
+    section#faqs div.faqs {
+        margin: 4rem;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    section#faqs div.sub_head {
+        padding: 1rem 6rem;
+    }
+    section#faqs div.faqs .faq_card span h4 {
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 472px) {
+    section#faqs div.heading {
+        margin: auto 2rem;
+    }
+}
+
+/* **************************** Contact Section **************************** */
+
+section#contact {
+    position: relative;
+    margin: 10rem auto;
+}
+
+section#contact div.sub_head {
+    position: relative;
+    margin: 4rem auto;
+}
+
+section#contact div.sub_head h4 {
+    margin: 1rem auto;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: var(--mainfont);
+    color: var(--lightblack);
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+section#contact div.sub_head h2 {
+    position: relative;
+    margin: 1rem auto;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: var(--mainfont);
+    color: var(--darkblack);
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+section#contact div.sub_head h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -30%;
+    transform: translateX(-50%);
+    height: 0.6rem;
+    width: 40%;
+    border-radius: 4px;
+    background: linear-gradient(
+        90deg,
+        var(--darkwhite),
+        var(--primarylight),
+        var(--darkwhite)
+    );
+}
+
+section#contact div.sub_head p {
+    margin: 2rem auto;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: var(--codefont);
+    color: var(--darkgrey);
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+section#contact div.platforms {
+    margin: 4rem auto;
+    padding: 2rem 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section#contact div.platforms .social_box {
+    margin: 2rem;
+    padding: 2rem;
+    width: 25rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 4px rgba(50, 69, 107, 0.1);
+    transition: all 0.2s linear;
+}
+
+section#contact div.platforms .social_box:hover {
+    box-shadow: 0 0 0 3px rgba(62, 100, 255, 0.8);
+}
+
+section#contact div.platforms .social_box i {
+    padding: 1rem;
+    font-size: 2.8rem;
+    color: var(--darkwhite);
+    background: var(--primarylight);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+section#contact div.platforms .social_box span {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: var(--mainfont);
+    color: var(--lightblack);
+    text-align: left;
+    letter-spacing: 0.5px;
+}
+
+section#contact div.platforms .social_box a {
+    font-size: 1.7rem;
+    font-weight: 600;
+    font-family: var(--mainfont);
+    color: var(--darkblack);
+    text-align: left;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease;
+}
+
+section#contact div.platforms .social_box a:hover {
+    color: var(--primarylight);
+}
+
+/* **************************** Responsive **************************** */
+
+@media (max-width: 992px) {
+    section#contact div.platforms .social_box {
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    section#contact div.sub_head {
+        margin: 2rem auto auto;
+        padding: 1rem 6rem;
+    }
+    section#contact div.sub_head p {
+        font-size: 1.8rem;
+    }
+    section#contact div.platforms {
+        margin: auto;
+        padding: 2rem 6rem;
+    }
+}
+
+@media (max-width: 472px) {
+    section#contact div.heading {
+        margin: auto 2rem;
+    }
+}
+
+/* **************************** Styles End **************************** */
