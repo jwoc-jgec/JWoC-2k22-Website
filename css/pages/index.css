@@ -110,17 +110,17 @@ section#banner div.banner p {
     line-height: 1.6;
 }
 
-section#banner div.banner p span {
-    display: block;
-    margin: 3rem auto -1rem;
-    padding: 0 1.5rem;
+section#banner div.banner h4 {
+    margin: 0 auto 1rem;
+    padding: 0.6rem 1.6rem;
     font-size: 2rem;
-    font-weight: 500;
-    font-family: var(--codefont);
+    font-weight: 600;
+    font-family: "Orbitron", sans-serif;
     color: var(--darkwhite);
     background: rgba(255, 32, 133, 1);
-    width: fit-content;
     border-radius: 20px;
+    text-align: center;
+    letter-spacing: 1px;
 }
 
 section#banner div.banner .org_grp span {
@@ -170,6 +170,7 @@ section#banner div.banner .org_grp span {
     }
     section#banner div.banner h2 {
         font-size: 3rem;
+        line-height: 1.6;
     }
     section#banner div.banner p {
         padding: 1rem 2rem;
@@ -186,6 +187,9 @@ section#banner div.banner .org_grp span {
 @media (max-width: 572px) {
     section#banner div.banner p {
         padding: 1rem;
+    }
+    section#banner div.banner h4 {
+        font-size: 1.8rem;
     }
 }
 
@@ -1074,14 +1078,17 @@ section#timeline div.details .events .event_card p {
     section#timeline div.heading {
         margin: auto 2rem;
     }
+    section#timeline div.heading span.divider_2 {
+        height: 50vh;
+    }
     section#timeline div.details {
         margin: 2rem;
     }
     section#timeline div.details .events {
-        padding-left: 2rem;
+        padding-left: 3rem;
     }
     section#timeline div.details .events .event_card i {
-        left: -4.2rem;
+        left: -5.2rem;
     }
     section#timeline div.details .events .event_card span {
         margin: 1rem 0;
