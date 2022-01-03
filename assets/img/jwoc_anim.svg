@@ -57,12 +57,16 @@
     </defs>
 
     <script>
+        const isNotFirstKey = "isNotFirst";
+        const isNotFirst = sessionStorage.getItem(isNotFirstKey);
+        const delayTime = isNotFirst ? 500 : 4000;
+
 		window.addEventListener("load", () => {
 			var svg = document.querySelector('svg');
 
 			setTimeout(() => {
 				svg.setAttribute("class", "loaded");
-			}, 4000);
+			}, delayTime);
 		});
 	</script>
     
