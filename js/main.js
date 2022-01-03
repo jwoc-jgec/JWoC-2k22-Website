@@ -18,17 +18,17 @@ $(window).scroll(() => {
   $("header").toggleClass("scrolled", window.scrollY > 1000);
 });
 
-let scrollPos = 0;
-window.addEventListener("scroll", () => {
-  let scrollPosNow = window.pageYOffset || document.pageYOffset;
+// let scrollPos = 0;
+// window.addEventListener("scroll", () => {
+//   let scrollPosNow = window.pageYOffset || document.pageYOffset;
 
-  if (scrollPosNow > scrollPos) {
-    $("header").addClass("active");
-  } else {
-    $("header").removeClass("active");
-  }
-  scrollPos = scrollPosNow;
-});
+//   if (scrollPosNow > scrollPos) {
+//     $("header").addClass("active");
+//   } else {
+//     $("header").removeClass("active");
+//   }
+//   scrollPos = scrollPosNow;
+// });
 
 // Navbar Toggle ***************************************************
 
