@@ -48,7 +48,7 @@
     <link rel="stylesheet" href="../css/components/settings.css" />
     <link rel="stylesheet" href="../css/components/footer.css" />
     <link rel="stylesheet" href="../css/components/header.css" />
-    <link rel="stylesheet" href="../css/pages/soon.css" />
+    <link rel="stylesheet" href="../css/pages/auth.css" />
 
     <!-- External JS -->
     <script defer src="../js/libraries/jquery-3.6.0.min.js"></script>
@@ -75,18 +75,68 @@
     <!-- Header Navbar End -->
 
     <!-- Banner Start -->
-    <section id="comingsoon">
+    <section id="auth_register">
       <div class="sub_head">
         <h2>Mentee's Registration</h2>
-        <p>Register yourselves as mentee to work.</p>
+        <p>Register yourself as mentee to participate in the event.</p>
+        <img src="/assets/img/winter_text.png" alt="Winter Text" />
       </div>
-
-      <div class="comingsoon container">
-        <img src="../assets/img/coming_soon.svg" alt="Coming Soon Img" />
-        <h4>Mentee's Registration has not yet began.</h4>
-        <p>Till then checkout our schedule timeline.</p>
-        <a href="../" class="btn">Go To Home</a>
-      </div>
+    
+      <form id="auth_form" class="container">
+        <div class="form-group">
+          <label for="name">Your Name <span>*</span></label>
+          <p>How do we know you?</p>
+          <input type="text" class="form-control" placeholder="" id="name" name="Name" required />
+        </div>
+    
+        <div class="form-group">
+          <label for="college">College <span>*</span></label>
+          <p>Where did you belong to?</p>
+          <input type="text" class="form-control" placeholder="" id="college" name="College" required />
+        </div>
+    
+        <div class="form-group">
+          <label for="gituser">Github Username <span>*</span></label>
+          <p>What's your github identity?</p>
+          <input type="text" class="form-control" placeholder="" id="gituser" name="GitUser" required />
+        </div>
+    
+        <div class="form-group">
+          <label for="email">Email Address <span>*</span></label>
+          <p>Your IP address through which we can contact :)</p>
+          <input type="email" class="form-control" placeholder="" id="email" name="Email" required />
+        </div>
+    
+        <div class="form-group">
+          <label for="year">Onboard Year <span>*</span></label>
+          <p>What's your running year going!</p>
+          <input type="text" class="form-control" placeholder="" id="year" name="Year" required />
+        </div>
+    
+        <div class="form-group">
+          <label for="name">WhatsApp Contact <span>*</span></label>
+          <p>We will text you, only if required!</p>
+          <input type="text" class="form-control" placeholder="" id="name" name="name" required />
+        </div>
+    
+        <div class="form-group">
+          <label for="pdesc">What new things do you wish to try and learn through this event?
+            <span>*</span></label>
+          <p>Make sure that you can learn a lot!</p>
+          <textarea class="form-control" placeholder="" id="pdesc" name="ProjectDesc" rows="4" required></textarea>
+        </div>
+    
+        <label class="form-group input-checkbox" for="manual_check">
+          <input type="checkbox" id="manual_check" name="T&C" value="Manual Accepted" required />
+          <div><i class="bx bx-check"></i></div>
+          <h5>
+            I have read the <a href="../docs/student-manual.html" target="_blank">mentees' manual</a>
+            and will follow the rules & regulations. <span>*</span>
+          </h5>
+        </label>
+    
+        <button type="submit" class="btn btn-auth">Register Now</button>
+      </form>
     </section>
     <!-- Banner End -->
 
