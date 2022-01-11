@@ -245,6 +245,10 @@ form#auth_form button.btn-auth:hover {
   background: var(--primarydark);
 }
 
+.notyf__message {
+  font-size: 1.6rem;
+}
+
 /* **************************** Responsive **************************** */
 
 @media (max-width: 992px) {

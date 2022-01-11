@@ -43,6 +43,7 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="../css/libraries/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css" />
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="../css/components/settings.css" />
@@ -52,9 +53,11 @@
 
     <!-- External JS -->
     <script defer src="../js/libraries/jquery-3.6.0.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
 
     <!-- Main JS -->
     <script defer src="../js/main.js"></script>
+    <script defer src="./js/mentee.js"></script>
   </head>
 
   <body>
@@ -233,61 +236,5 @@
       </div>
     </footer>
     <!-- Footer End -->
-
-    <script>
-      const authForm = document.getElementById("auth_form");
-      const name = document.getElementById("name");
-      const email = document.getElementById("email");
-      const phone = document.getElementById("phone");
-      const whatsapp = document.getElementById("whatsapp");
-      const college = document.getElementById("college");
-      const year = document.getElementById("year");
-      const github = document.getElementById("github");
-      const linkedIn = document.getElementById("linkedIn");
-      const isFirstTime = document.getElementById("isFirstTime");
-      const answer1 = document.getElementById("answer1");
-      let ipDetails;
-
-      window.addEventListener("load", () => {
-        fetch("https://api.db-ip.com/v2/free/self")
-          .then((res) => res.json())
-          .then((data) => (ipDetails = data))
-          .catch((error) => console.log(error));
-      });
-
-      authForm.addEventListener("submit", (e) => {
-        e.preventDefault();
-        const data = {
-          name: name.value,
-          email: email.value,
-          phone: phone.value,
-          whatsapp: whatsapp.value,
-          ipAddress: ipDetails.ipAddress,
-          ipDetails: ipDetails,
-          college: college.value,
-          year: +year.value,
-          github: github.value,
-          linkedIn: linkedIn.value,
-          isFirstTime: +isFirstTime.value === 1 ? true : false,
-          answer1: answer1.value,
-        };
-        submitForm(data);
-        authForm.reset();
-      });
-
-      const submitForm = (data) => {
-        fetch("http://localhost:5000/mentee", {
-          method: "post",
-          headers: {
-            Accept: "application/json, text/plain, */*",
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(data),
-        })
-          .then((res) => res.json())
-          .then((res) => console.log(res))
-          .catch((error) => console.log(error));
-      };
-    </script>
   </body>
 </html>
