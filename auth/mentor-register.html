@@ -299,18 +299,17 @@
       window.addEventListener("load", () => {
         fetch("https://api.db-ip.com/v2/free/self")
           .then((res) => res.json())
-          .then((data) => ipDetails = data)
+          .then((data) => (ipDetails = data))
           .catch((error) => console.log(error));
       });
 
       authForm.addEventListener("submit", (e) => {
         e.preventDefault();
-        console.log(year.value);
         const data = {
           name: name.value,
           email: email.value,
           phone: phone.value,
-          whatsapp:whatsapp.value,
+          whatsapp: whatsapp.value,
           ipAddress: ipDetails.ipAddress,
           ipDetails: ipDetails,
           college: college.value,
@@ -324,6 +323,7 @@
           answer2: answer2.value,
         };
         submitForm(data);
+        authForm.reset();
       });
 
       const submitForm = (data) => {
@@ -335,9 +335,9 @@
           },
           body: JSON.stringify(data),
         })
-          .then(res => res.json())
-          .then(res => console.log(res))
-          .catch(error => console.log(error));
+          .then((res) => res.json())
+          .then((res) => console.log(res))
+          .catch((error) => console.log(error));
       };
     </script>
   </body>
