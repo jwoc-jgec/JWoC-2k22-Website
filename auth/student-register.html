@@ -57,7 +57,7 @@
 
     <!-- Main JS -->
     <script defer src="../js/main.js"></script>
-    <script defer src="./js/mentee.js"></script>
+    <script defer src="../js/auth/mentee.js"></script>
   </head>
 
   <body>
@@ -85,7 +85,7 @@
         <img src="/assets/img/winter_text.png" alt="Winter Text" />
       </div>
 
-      <form id="auth_form" class="container">
+      <form id="auth_form" class="container" name="mentee-registration">
         <div class="form-group">
           <label for="name">Your Name <span>*</span></label>
           <p>How do we know you?</p>
@@ -107,7 +107,7 @@
 
         <div class="form-group">
           <label for="phone">Phone Number <span>*</span></label>
-          <p>We will text you, only if required!</p>
+          <p>We will call you, only if required!</p>
           <input type="tel" class="form-control" placeholder="" id="phone" name="Phone" required />
         </div>
 
@@ -141,7 +141,7 @@
           <label for="year">Current Year <span>*</span></label>
           <p>What is your current year of study?</p>
 
-          <select name="year" id="year" required style="font-size: 15px; cursor: pointer">
+          <select name="year" id="year" required>
             <option value="1">1st Year</option>
             <option value="2">2nd Year</option>
             <option value="3">3rd Year</option>
@@ -176,14 +176,13 @@
         </div>
 
         <div class="form-group">
-          <label for="year">Is this your first time ? <span>*</span></label>
+          <label for="isFirstTime">Is this your first time? <span>*</span></label>
           <p>Mention if you haven't contributed or participated in any open-source event before</p>
 
           <select
             name="isFirstTime"
             id="isFirstTime"
             required
-            style="font-size: 15px; cursor: pointer"
           >
             <option value="1">Yes, I haven't participated before</option>
             <option value="2">No, I have prior experience of open-source</option>
@@ -205,8 +204,8 @@
           ></textarea>
         </div>
 
-        <label class="form-group input-checkbox" for="manual_check">
-          <input type="checkbox" id="manual_check" name="T&C" value="Manual Accepted" required />
+        <label class="form-group input-checkbox" for="manualCheckbox">
+          <input type="checkbox" id="manualCheckbox" name="manualCheckbox" value="Manual Accepted" required />
           <div><i class="bx bx-check"></i></div>
           <h5>
             I have read the
