@@ -149,6 +149,7 @@ form#auth_form .form-group select {
   height: 4.5rem;
   font-size: 1.7rem;
   outline: none;
+  cursor: pointer;
 }
 
 form#auth_form .form-group textarea {
