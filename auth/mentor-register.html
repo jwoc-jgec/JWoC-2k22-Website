@@ -44,6 +44,10 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="../css/libraries/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css" />
+    <link
+      rel="stylesheet"
+      href="http://bootstrap-tagsinput.github.io/bootstrap-tagsinput/dist/bootstrap-tagsinput.css"
+    />
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="../css/components/settings.css" />
@@ -54,6 +58,10 @@
     <!-- External JS -->
     <script defer src="../js/libraries/jquery-3.6.0.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+    <script
+      defer
+      src="http://bootstrap-tagsinput.github.io/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"
+    ></script>
 
     <!-- Main JS -->
     <script defer src="../js/main.js"></script>
@@ -202,6 +210,12 @@
         </div>
 
         <div class="form-group">
+          <label for="projectLink">Tech Stack of your project <span>*</span></label>
+          <p>Mention the tech stack of your project!</p>
+          <input type="text" id="projectTags" data-role="tagsinput" />
+        </div>
+
+        <div class="form-group">
           <label for="projectDescription">Project Description <span>*</span></label>
           <p>Brief knowledge about it will help us to!</p>
           <textarea
@@ -245,7 +259,13 @@
         </div>
 
         <label class="form-group input-checkbox" for="manualCheckbox">
-          <input type="checkbox" id="manualCheckbox" name="manualCheckbox" value="Manual Accepted" required />
+          <input
+            type="checkbox"
+            id="manualCheckbox"
+            name="manualCheckbox"
+            value="Manual Accepted"
+            required
+          />
           <div><i class="bx bx-check"></i></div>
           <h5>
             I have read the
