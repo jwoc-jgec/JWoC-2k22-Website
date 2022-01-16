@@ -1,6 +1,6 @@
 {
   "files.eol": "\n",
-  "editor.tabSize": 4,
+  "editor.tabSize": 2,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.bracketPairColorization.enabled": false,
   "editor.autoClosingBrackets": "always",

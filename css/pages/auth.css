@@ -1,0 +1,423 @@
+/* **************************** Registration Auth Styles **************************** */
+
+section#auth_register {
+  position: relative;
+  margin: 6rem auto;
+  padding: 6rem 2rem;
+  background: rgba(247, 250, 252, 0.8);
+}
+
+section#auth_register::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/assets/img/pattern_auth.png);
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+:root {
+  --secondaryoff: #009dae;
+  --warningoff: #ff3838;
+}
+
+/* **************************** Sub Head Section **************************** */
+
+section#auth_register div.sub_head {
+  position: relative;
+  margin: 2rem auto;
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section#auth_register div.sub_head h2 {
+  padding: 0.5rem 1rem 1.5rem;
+  font-size: 3.2rem;
+  font-weight: 600;
+  font-family: "Blanka";
+  color: var(--lightblack);
+  letter-spacing: 3px;
+  text-align: center;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 4px rgba(50, 69, 107, 0.2);
+}
+
+section#auth_register div.sub_head p {
+  margin: 1rem auto;
+  font-size: 2.4rem;
+  font-weight: 500;
+  font-family: var(--codefont);
+  color: var(--lightblack);
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+section#auth_register div.sub_head img {
+  margin: 0 auto -5rem;
+  width: 15rem;
+  height: auto;
+}
+
+/* **************************** Auth Form Styles **************************** */
+
+form#auth_form {
+  position: relative;
+  width: 100rem;
+  margin: auto;
+  padding: 3rem 8rem 6rem;
+}
+
+form#auth_form .form-group {
+  position: relative;
+  margin: 3rem auto;
+  padding: 2rem;
+  display: block;
+  background: var(--darkwhite);
+  box-shadow: 0 0 2px rgb(50, 69, 107, 0.2);
+  border-radius: 12px;
+  z-index: 1;
+}
+
+form#auth_form .form-group::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 3.1px solid var(--primarylight);
+  border-radius: 12px;
+  opacity: 0;
+  transition: all 0.2s linear;
+  z-index: -1;
+}
+
+form#auth_form .form-group:hover:after {
+  opacity: 1;
+}
+
+form#auth_form .form-group label {
+  margin: 0.5rem auto 1px;
+  font-size: 1.7rem;
+  font-weight: 500;
+  font-family: var(--mainfont);
+  color: var(--lightblack);
+  letter-spacing: 0.2px;
+}
+
+form#auth_form .form-group label span {
+  font-weight: 700;
+  color: var(--warningoff);
+}
+
+form#auth_form .form-group p {
+  margin: 1px auto 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: var(--curlfont);
+  font-style: italic;
+  color: var(--secondaryoff);
+  letter-spacing: 0.2px;
+}
+
+form#auth_form .form-group input,
+form#auth_form .form-group select,
+form#auth_form .form-group textarea {
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  font-family: var(--codefont);
+  color: var(--lightblack);
+  background: var(--lightwhite);
+  border: 2px solid rgba(155, 164, 180, 0.4);
+  border-radius: 6px;
+  letter-spacing: 0.8px;
+  box-shadow: none;
+  transition: all 0.2s linear;
+}
+
+form#auth_form .form-group select {
+  width: 100%;
+  height: 4.5rem;
+  font-size: 1.7rem;
+  outline: none;
+  cursor: pointer;
+}
+
+form#auth_form .form-group textarea {
+  font-size: 1.7rem;
+  font-weight: 400;
+  text-align: justify;
+}
+
+/* **************************** Form Check-Box Styles **************************** */
+
+form#auth_form label.input-checkbox {
+  position: relative;
+  padding: 2.5rem 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+form#auth_form label.input-checkbox input {
+  margin: 0;
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  opacity: 0;
+}
+
+form#auth_form label.input-checkbox div {
+  position: relative;
+  margin: auto 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  background: var(--darkwhite);
+  border-radius: 4px;
+  border: 2px solid rgba(155, 164, 180, 0.6);
+  transition: all 0.05s linear;
+}
+
+form#auth_form label.input-checkbox div i {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--darkwhite);
+  opacity: 0;
+  transition: all 0.05s linear;
+}
+
+form#auth_form label.input-checkbox input[type="checkbox"]:checked ~ div {
+  background: var(--primarylight);
+  border: 2px solid var(--primarylight);
+}
+form#auth_form label.input-checkbox input[type="checkbox"]:checked ~ div i {
+  opacity: 1;
+}
+
+form#auth_form label.input-checkbox h5 {
+  margin: auto 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  font-family: var(--codefont);
+  color: var(--lightblack);
+  letter-spacing: 0.6px;
+  user-select: none;
+}
+
+form#auth_form label.input-checkbox h5 span {
+  font-weight: 700;
+  color: var(--warningoff);
+}
+form#auth_form label.input-checkbox h5 a {
+  font-weight: 600;
+  color: var(--primarylight);
+  text-decoration: none;
+}
+form#auth_form label.input-checkbox h5 a:hover {
+  color: var(--warningoff);
+}
+
+form#auth_form .form-group input:-webkit-autofill,
+form#auth_form .form-group input:-webkit-autofill:hover,
+form#auth_form .form-group input:-webkit-autofill:focus,
+form#auth_form .form-group input:-webkit-autofill:active {
+  -webkit-text-fill-color: var(--lightblack);
+  box-shadow: 0 0 0 30px var(--lightwhite) inset !important;
+}
+
+form#auth_form button.btn-auth {
+  margin: 0;
+  padding: 1rem 2rem;
+  width: 100%;
+  font-size: 2.2rem;
+  font-weight: 500;
+  font-family: var(--codefont);
+  color: var(--darkwhite);
+  background: var(--primarylight);
+  border-radius: 10px;
+  letter-spacing: 0.8px;
+}
+
+form#auth_form button.btn-auth:hover {
+  background: var(--primarydark);
+}
+
+/* ********************** Form Input Tags Styles ********************** */
+
+div.bootstrap-tagsinput {
+  padding: 0;
+  border: none;
+  background: none;
+  box-shadow: none;
+  color: var(--lightblack);
+}
+
+div.bootstrap-tagsinput input {
+  width: 100vw;
+  height: 4rem;
+}
+
+div.bootstrap-tagsinput .tag {
+  display: inline-block;
+  margin: 0.2rem auto;
+  padding: 0.3rem 1rem 0.6rem;
+  width: fit-content;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: var(--codefont);
+  background: var(--primarylight);
+  color: var(--darkwhite);
+  border-radius: 8px;
+  letter-spacing: 0.6px;
+}
+
+div.bootstrap-tagsinput .tag [data-role="remove"] {
+  font-size: 1.8rem;
+  vertical-align: text-bottom;
+  box-shadow: none !important;
+}
+
+/* ********************** Form Toast Msg Styles ********************** */
+
+.notyf__toast {
+  border-radius: 10px;
+  max-width: 34rem;
+  box-shadow: 0 2px 4px rgba(50, 69, 107, 0.2);
+}
+
+.notyf__message {
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: var(--curlfont);
+  color: var(--darkwhite);
+  letter-spacing: 0.2px;
+}
+
+/* **************************** Responsive **************************** */
+
+@media (max-width: 992px) {
+  section#auth_register::before {
+    background-size: 100%;
+  }
+  form#auth_form {
+    width: 100%;
+    padding: 3rem 4rem 6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  section#auth_register div.sub_head {
+    padding: 2rem 1rem;
+  }
+  section#auth_register div.sub_head h2 {
+    font-size: 3rem;
+  }
+  section#auth_register div.sub_head p {
+    font-size: 2.2rem;
+  }
+
+  section#auth_register::before {
+    background-size: 120%;
+  }
+  form#auth_form .form-group input {
+    font-size: 1.8rem;
+    letter-spacing: 0.4px;
+  }
+}
+
+@media (max-width: 572px) {
+  section#auth_register::before {
+    background-size: 150%;
+  }
+  form#auth_form {
+    padding: 3rem 0 6rem;
+  }
+  form#auth_form .form-group,
+  form#auth_form .form-group::after {
+    border-radius: 8px;
+  }
+  form#auth_form button.btn-auth {
+    font-size: 2rem;
+  }
+}
+
+/* **************************** Auth Overlay Loader **************************** */
+
+#loader {
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.spinner {
+  text-align: center;
+  display: flex;
+}
+
+.spinner > div {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 5px;
+  background-color: var(--primaryoff);
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes sk-bouncedelay {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/* **************************** Styles End **************************** */
