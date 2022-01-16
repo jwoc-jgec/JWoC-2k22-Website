@@ -4,6 +4,7 @@ var notyf = new Notyf({
   dismissible: true,
 });
 
+const loader = document.getElementById("loader");
 const authForm = document.getElementById("auth_form");
 const name = document.getElementById("name");
 const email = document.getElementById("email");
@@ -29,6 +30,7 @@ window.addEventListener("load", () => {
 
 authForm.addEventListener("submit", (e) => {
   e.preventDefault();
+  loader.style.display = "flex";
   const data = {
     name: name.value,
     email: email.value,
@@ -61,6 +63,12 @@ const submitForm = (data) => {
     body: JSON.stringify(data),
   })
     .then((res) => res.json())
-    .then((res) => (res.success === "ok" ? notyf.success(res.message) : notyf.error(res.message)))
-    .catch(() => notyf.error("An error has occurred. Please reload the page and try again !"));
+    .then((res) => {
+      loader.style.display = "none";
+      res.success === "ok" ? notyf.success(res.message) : notyf.error(res.message);
+    })
+    .catch(() => {
+      loader.style.display = "none";
+      notyf.error("An error has occurred. Please reload the page and try again !");
+    });
 };
