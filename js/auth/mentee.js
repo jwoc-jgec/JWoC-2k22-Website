@@ -27,23 +27,27 @@ window.addEventListener("load", () => {
 
 authForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  loader.style.display = "flex";
-  const data = {
-    name: name.value,
-    email: email.value,
-    phone: phone.value,
-    whatsapp: whatsapp.value,
-    ipAddress: ipDetails.ipAddress,
-    ipDetails: ipDetails,
-    college: college.value,
-    year: +year.value,
-    github: github.value,
-    linkedIn: linkedIn.value,
-    isFirstTime: +isFirstTime.value === 1 ? true : false,
-    answer1: answer1.value,
-  };
-  submitForm(data);
-  authForm.reset();
+  if (!ipDetails) {
+    notyf.error("Please use Google Chrome browser for registration !");
+  } else {
+    loader.style.display = "flex";
+    const data = {
+      name: name.value,
+      email: email.value,
+      phone: phone.value,
+      whatsapp: whatsapp.value,
+      ipAddress: ipDetails.ipAddress,
+      ipDetails: ipDetails,
+      college: college.value,
+      year: +year.value,
+      github: github.value,
+      linkedIn: linkedIn.value,
+      isFirstTime: +isFirstTime.value === 1 ? true : false,
+      answer1: answer1.value,
+    };
+    submitForm(data);
+    authForm.reset();
+  }
 });
 
 const submitForm = (data) => {
