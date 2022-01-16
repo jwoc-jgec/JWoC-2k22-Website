@@ -1301,6 +1301,13 @@ section#sponsors div.details .category .sponsors img {
   height: auto;
 }
 
+section#sponsors div.details .category .sponsors img.w10 {width: 10rem}
+section#sponsors div.details .category .sponsors img.w15 {width: 15rem}
+section#sponsors div.details .category .sponsors img.w20 {width: 20rem}
+section#sponsors div.details .category .sponsors img.w25 {width: 25rem}
+section#sponsors div.details .category .sponsors img.w30 {width: 30rem}
+section#sponsors div.details .category .sponsors img.w35 {width: 35rem}
+
 section#sponsors div.details .category .sponsors h3 {
   margin: auto;
   font-size: 3.5rem;
@@ -1335,6 +1342,13 @@ section#sponsors div.details .category .sponsors h3 {
   section#sponsors div.details .category .sponsors {
     justify-content: center;
   }
+
+  section#sponsors div.details .category .sponsors img.w10 {width: 8rem}
+  section#sponsors div.details .category .sponsors img.w15 {width: 13rem}
+  section#sponsors div.details .category .sponsors img.w20 {width: 17rem}
+  section#sponsors div.details .category .sponsors img.w25 {width: 22rem}
+  section#sponsors div.details .category .sponsors img.w30 {width: 27rem}
+  section#sponsors div.details .category .sponsors img.w35 {width: 32rem}
 }
 
 @media (max-width: 472px) {
