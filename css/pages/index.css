@@ -1231,6 +1231,16 @@ section#sponsors div.sub_head a.btn:hover {
   background: var(--primarylight);
 }
 
+section#sponsors h3.bottom_tagline {
+  margin: 1rem;
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: var(--codefont);
+  color: var(--lightgrey);
+  text-align: center;
+  letter-spacing: 1px;
+}
+
 section#sponsors div.details {
   margin: 8rem auto;
 }
@@ -1263,7 +1273,7 @@ section#sponsors div.details .category .title::after {
 
 section#sponsors div.details .category .title img {
   margin: auto;
-  width: 9rem;
+  width: 8rem;
   height: auto;
 }
 
@@ -1285,6 +1295,12 @@ section#sponsors div.details .category .sponsors {
   flex-wrap: wrap;
 }
 
+section#sponsors div.details .category .sponsors img {
+  margin: 1rem 2rem;
+  width: auto;
+  height: auto;
+}
+
 section#sponsors div.details .category .sponsors h3 {
   margin: auto;
   font-size: 3.5rem;
@@ -1298,12 +1314,6 @@ section#sponsors div.details .category .sponsors h3 {
 /* **************************** Responsive **************************** */
 
 @media (max-width: 1240px) {
-  section#sponsors div.details .category .title img {
-    width: 8rem;
-  }
-  section#sponsors div.details .category .title h4 {
-    font-size: 2.2rem;
-  }
   section#sponsors div.details .category .sponsors h3 {
     font-size: 3rem;
   }
@@ -1313,11 +1323,17 @@ section#sponsors div.details .category .sponsors h3 {
   section#sponsors div.sub_head {
     padding: 1rem 6rem;
   }
+  section#sponsors div.details .category .title {
+    margin: 2rem auto;
+  }
   section#sponsors div.details .category .title img {
-    width: 6rem;
+    width: 7rem;
   }
   section#sponsors div.details .category .title::after {
     display: none;
+  }
+  section#sponsors div.details .category .sponsors {
+    justify-content: center;
   }
 }
 
