@@ -8,7 +8,7 @@ const intValue = 1000 * 60 * 60 * 24;
 let eventsTimeline = [
     {
         id: 1,
-        date: "15 January, 2022",
+        date: "16 January, 2022",
         name: "JWoC Program Announced",
         desc: "Here we go announced our JWoC program as a big start!",
 
@@ -17,7 +17,7 @@ let eventsTimeline = [
         completeClass: "bx bx-check",
         completeStyle: "display:none",
         daysLeft: Math.floor(
-            (new Date("15 January, 2022").getTime() - intDate) / intValue
+            (new Date("16 January, 2022").getTime() - intDate) / intValue
         ),
     },
     {
@@ -26,8 +26,8 @@ let eventsTimeline = [
         name: "Mentor & Mentee Registration",
         desc: "All the mentors & mentees can start your registration from now on.",
 
-        completeClass: "",
-        completeStyle: "",
+        completeClass: "bx bx-check",
+        completeStyle: "display:none",
         daysLeft: Math.floor(
             (new Date("16 January, 2022").getTime() - intDate) / intValue
         ),
@@ -35,8 +35,8 @@ let eventsTimeline = [
     {
         id: 3,
         date: "24 January, 2022",
-        name: "Mentor Registration Ends",
-        desc: "Hope all the mentors have registered themselves & submitted their projects.",
+        name: "Mentor & Mentee Registration Ends",
+        desc: "Hope all mentors & mentees have registered themselves & submitted their projects.",
 
         completeClass: "",
         completeStyle: "",
@@ -46,14 +46,14 @@ let eventsTimeline = [
     },
     {
         id: 4,
-        date: "28 January, 2022",
-        name: "Projects Announced",
-        desc: "Wait is over, We are going to reveal all the projects for this event.",
+        date: "24 January, 2022",
+        name: "Projects Announce Starts",
+        desc: "Wait is over, We are going to reveal the projects for this event.",
 
         completeClass: "",
         completeStyle: "",
         daysLeft: Math.floor(
-            (new Date("28 January, 2022").getTime() - intDate) / intValue
+            (new Date("24 January, 2022").getTime() - intDate) / intValue
         ),
     },
     {
