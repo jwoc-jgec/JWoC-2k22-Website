@@ -30,31 +30,35 @@ window.addEventListener("load", () => {
 
 authForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  loader.style.display = "flex";
-  const data = {
-    name: name.value,
-    email: email.value,
-    phone: phone.value,
-    whatsapp: whatsapp.value,
-    ipAddress: ipDetails.ipAddress,
-    ipDetails: ipDetails,
-    college: college.value,
-    year: +year.value,
-    github: github.value,
-    linkedIn: linkedIn.value,
-    projectName: projectName.value,
-    projectLink: projectLink.value,
-    projectTags: $("#projectTags").tagsinput("items"),
-    projectDescription: projectDescription.value,
-    answer1: answer1.value,
-    answer2: answer2.value,
-  };
-  submitForm(data);
-  authForm.reset();
+  if (!ipDetails) {
+    notyf.error("Please use Google Chrome browser for registration !");
+  } else {
+    loader.style.display = "flex";
+    const data = {
+      name: name.value,
+      email: email.value,
+      phone: phone.value,
+      whatsapp: whatsapp.value,
+      ipAddress: ipDetails.ipAddress,
+      ipDetails: ipDetails,
+      college: college.value,
+      year: +year.value,
+      github: github.value,
+      linkedIn: linkedIn.value,
+      projectName: projectName.value,
+      projectLink: projectLink.value,
+      projectTags: $("#projectTags").tagsinput("items"),
+      projectDescription: projectDescription.value,
+      answer1: answer1.value,
+      answer2: answer2.value,
+    };
+    submitForm(data);
+    authForm.reset();
+  }
 });
 
 const submitForm = (data) => {
-  fetch("http://localhost:5000/mentor", {
+  fetch("https://jwoc-backend.glitch.me/mentor", {
     method: "post",
     headers: {
       Accept: "application/json, text/plain, */*",
