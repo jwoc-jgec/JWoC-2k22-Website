@@ -47,7 +47,7 @@ authForm.addEventListener("submit", (e) => {
 });
 
 const submitForm = (data) => {
-  fetch("http://localhost:5000/mentee", {
+  fetch("https://jwoc-backend.glitch.me/mentee", {
     method: "post",
     headers: {
       Accept: "application/json, text/plain, */*",
