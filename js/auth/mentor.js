@@ -42,6 +42,7 @@ authForm.addEventListener("submit", (e) => {
     linkedIn: linkedIn.value,
     projectName: projectName.value,
     projectLink: projectLink.value,
+    projectTags: $("#projectTags").tagsinput("items"),
     projectDescription: projectDescription.value,
     answer1: answer1.value,
     answer2: answer2.value,
