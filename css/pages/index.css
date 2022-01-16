@@ -123,6 +123,7 @@ section#banner div.banner h4 {
   letter-spacing: 1px;
 }
 
+section#banner div.banner .org_grp a,
 section#banner div.banner .org_grp span {
   display: block;
   margin: 1rem auto;
@@ -131,12 +132,22 @@ section#banner div.banner .org_grp span {
   font-size: 2.2rem;
   font-weight: 600;
   font-family: var(--mainfont);
-  color: var(--darkblack);
-  background: var(--lightwhite);
+  color: var(--darkwhite);
+  background: rgba(15, 25, 39, 1);
+  border: 3px solid var(--primaryoff);
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   text-align: center;
+  text-decoration: none;
   border-radius: 20px;
   letter-spacing: 0.8px;
+}
+
+section#banner div.banner .org_grp a {
+  background: #0f1927;
+  border-top: 5px solid #ffcc1d;
+  border-right: 5px solid #14b25f;
+  border-left: 5px solid #1e90ff;
+  border-bottom: 5px solid #f74037;
 }
 
 /* **************************** Responsive **************************** */
