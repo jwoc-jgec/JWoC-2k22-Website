@@ -1400,7 +1400,7 @@ section#sponsors div.details {
 }
 
 section#sponsors div.details .category {
-  margin: 6rem auto;
+  margin: 6rem 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1442,9 +1442,8 @@ section#sponsors div.details .category .title h4 {
 }
 
 section#sponsors div.details .category .sponsors {
-  padding: 0 4rem;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -1484,6 +1483,9 @@ section#sponsors div.details .category .sponsors h3 {
   section#sponsors div.sub_head {
     padding: 1rem 6rem;
   }
+  section#sponsors div.details .category {
+    margin: 4rem auto;
+  }
   section#sponsors div.details .category .title {
     margin: 2rem auto;
   }
@@ -1492,9 +1494,6 @@ section#sponsors div.details .category .sponsors h3 {
   }
   section#sponsors div.details .category .title::after {
     display: none;
-  }
-  section#sponsors div.details .category .sponsors {
-    justify-content: center;
   }
 
   section#sponsors div.details .category .sponsors img.w10 {width: 8rem}
