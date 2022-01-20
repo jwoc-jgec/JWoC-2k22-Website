@@ -307,6 +307,10 @@ div.bootstrap-tagsinput .tag [data-role="remove"] {
   letter-spacing: 0.2px;
 }
 
+.notyf__ripple {
+  width: 450px;
+}
+
 /* ********************** Form Discord Modal Styles ********************** */
 
 div#form_modal {
