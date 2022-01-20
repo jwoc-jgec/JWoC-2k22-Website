@@ -16,7 +16,9 @@ let eventsTimeline = [
     // completeStyle: "display:none",
     completeClass: "bx bx-check",
     completeStyle: "display:none",
-    daysLeft: Math.floor((new Date("16 January, 2022").getTime() - intDate) / intValue),
+    daysLeft: Math.floor(
+      (new Date("16 January, 2022 23:59:59").getTime() - intDate) / intValue + 1,
+    ),
   },
   {
     id: 2,
@@ -26,7 +28,9 @@ let eventsTimeline = [
 
     completeClass: "bx bx-check",
     completeStyle: "display:none",
-    daysLeft: Math.floor((new Date("16 January, 2022").getTime() - intDate) / intValue),
+    daysLeft: Math.floor(
+      (new Date("16 January, 2022 23:59:59").getTime() - intDate) / intValue + 1,
+    ),
   },
   {
     id: 3,
@@ -36,7 +40,9 @@ let eventsTimeline = [
 
     completeClass: "",
     completeStyle: "",
-    daysLeft: Math.floor((new Date("24 January, 2022").getTime() - intDate) / intValue),
+    daysLeft: Math.floor(
+      (new Date("24 January, 2022 23:59:59").getTime() - intDate) / intValue + 1,
+    ),
   },
   {
     id: 4,
@@ -46,7 +52,9 @@ let eventsTimeline = [
 
     completeClass: "",
     completeStyle: "",
-    daysLeft: Math.floor((new Date("24 January, 2022").getTime() - intDate) / intValue),
+    daysLeft: Math.floor(
+      (new Date("24 January, 2022 23:59:59").getTime() - intDate) / intValue + 1,
+    ),
   },
   {
     id: 5,
@@ -56,7 +64,9 @@ let eventsTimeline = [
 
     completeClass: "",
     completeStyle: "",
-    daysLeft: Math.floor((new Date("28 January, 2022").getTime() - intDate) / intValue),
+    daysLeft: Math.floor(
+      (new Date("28 January, 2022 23:59:59").getTime() - intDate) / intValue + 1,
+    ),
   },
   {
     id: 6,
@@ -66,7 +76,9 @@ let eventsTimeline = [
 
     completeClass: "",
     completeStyle: "",
-    daysLeft: Math.floor((new Date("30 January, 2022").getTime() - intDate) / intValue),
+    daysLeft: Math.floor(
+      (new Date("30 January, 2022 23:59:59").getTime() - intDate) / intValue + 1,
+    ),
   },
   {
     id: 7,
@@ -76,7 +88,9 @@ let eventsTimeline = [
 
     completeClass: "",
     completeStyle: "",
-    daysLeft: Math.floor((new Date("1 February, 2022").getTime() - intDate) / intValue),
+    daysLeft: Math.floor(
+      (new Date("1 February, 2022 23:59:59").getTime() - intDate) / intValue + 1,
+    ),
   },
   {
     id: 8,
@@ -86,7 +100,9 @@ let eventsTimeline = [
 
     completeClass: "",
     completeStyle: "",
-    daysLeft: Math.floor((new Date("20 February, 2022").getTime() - intDate) / intValue),
+    daysLeft: Math.floor(
+      (new Date("20 February, 2022 23:59:59").getTime() - intDate) / intValue + 1,
+    ),
   },
   {
     id: 9,
@@ -96,7 +112,7 @@ let eventsTimeline = [
 
     completeClass: "",
     completeStyle: "",
-    daysLeft: Math.floor((new Date("2 March, 2022").getTime() - intDate) / intValue),
+    daysLeft: Math.floor((new Date("2 March, 2022 23:59:59").getTime() - intDate) / intValue + 1),
   },
   {
     id: 10,
@@ -106,7 +122,7 @@ let eventsTimeline = [
 
     completeClass: "",
     completeStyle: "",
-    daysLeft: Math.floor((new Date("8 March, 2022").getTime() - intDate) / intValue),
+    daysLeft: Math.floor((new Date("8 March, 2022 23:59:59").getTime() - intDate) / intValue + 1),
   },
 ];
 
