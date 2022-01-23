@@ -6,7 +6,6 @@ var notyf = new Notyf({
 
 const loader = document.getElementById("loader");
 const discordModal = document.getElementById("form_modal");
-const discordLink = document.getElementById("discord-link");
 const authForm = document.getElementById("auth_form");
 const name = document.getElementById("name");
 const email = document.getElementById("email");
@@ -66,11 +65,10 @@ const submitForm = (data) => {
       loader.style.display = "none";
       res.success === "ok" ? notyf.success(res.message) : notyf.error(res.message);
 
-      discordLink.href = "https://discord.gg/ve6ad4jfEP";
       discordModal.classList.add("active");
-      setTimeout(() => {
-        discordModal.classList.remove("active");
-      }, 8000);
+      // setTimeout(() => {
+      //   discordModal.classList.remove("active");
+      // }, 10000);
     })
     .catch(() => {
       loader.style.display = "none";

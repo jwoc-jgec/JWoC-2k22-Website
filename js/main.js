@@ -61,6 +61,12 @@ $(".goBack").click(function () {
   window.history.back();
 });
 
+// Discord Modal CLose *********************************************
+
+$("div#form_modal i#modal_close").click(function () {
+  $("div#form_modal").removeClass("active");
+});
+
 // Count Down Function *********************************************
 
 function countTimer() {
