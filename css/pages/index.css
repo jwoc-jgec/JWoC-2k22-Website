@@ -1134,6 +1134,24 @@ section#projects div.sub_head h2 {
   letter-spacing: 0.2px;
 }
 
+/* ================ Projects Soon Image ================ */
+
+section#projects div.figure {
+  position: relative;
+  margin: 4rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section#projects div.figure img {
+  margin: auto;
+  width: 30%;
+  height: auto;
+}
+
+/* ================ Projects Timer ================ */
+
 section#projects div.timer {
   position: relative;
   margin: 4rem auto;
@@ -1182,11 +1200,17 @@ section#projects div.timer .time p {
   section#projects div.timer {
     grid-template-columns: repeat(2, 1fr);
   }
+  section#projects div.figure img {
+    width: 60%;
+  }
 }
 
 @media (max-width: 472px) {
   section#projects div.heading {
     margin: auto 2rem;
+  }
+  section#projects div.figure img {
+    width: 70%;
   }
 }
 

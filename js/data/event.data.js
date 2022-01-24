@@ -46,14 +46,14 @@ let eventsTimeline = [
   },
   {
     id: 4,
-    date: "24 January, 2022",
+    date: "25 January, 2022",
     name: "Projects Announcement Begins",
     desc: "The wait is over! We are going to reveal the selected projects",
 
     completeClass: "",
     completeStyle: "",
     daysLeft: Math.floor(
-      (new Date("24 January, 2022 23:59:59").getTime() - intDate) / intValue + 1,
+      (new Date("25 January, 2022 23:59:59").getTime() - intDate) / intValue + 1,
     ),
   },
   {
@@ -70,14 +70,14 @@ let eventsTimeline = [
   },
   {
     id: 6,
-    date: "30 January, 2022",
+    date: "31 January, 2022",
     name: "Community Bonding Ends",
     desc: "From now on we will work together!",
 
     completeClass: "",
     completeStyle: "",
     daysLeft: Math.floor(
-      (new Date("30 January, 2022 23:59:59").getTime() - intDate) / intValue + 1,
+      (new Date("31 January, 2022 23:59:59").getTime() - intDate) / intValue + 1,
     ),
   },
   {
