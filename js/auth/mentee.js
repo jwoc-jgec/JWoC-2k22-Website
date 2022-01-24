@@ -59,12 +59,12 @@ const submitForm = (data) => {
     .then((res) => res.json())
     .then((res) => {
       loader.style.display = "none";
-      res.success === "ok" ? notyf.success(res.message) : notyf.error(res.message);
-
-      discordModal.classList.add("active");
-      // setTimeout(() => {
-      //   discordModal.classList.remove("active");
-      // }, 10000);
+      if (res.success === "ok") {
+        notyf.success(res.message);
+        discordModal.classList.add("active");
+      } else {
+        notyf.error(res.message);
+      }
     })
     .catch(() => {
       loader.style.display = "none";
