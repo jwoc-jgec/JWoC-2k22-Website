@@ -36,10 +36,10 @@ let eventsTimeline = [
     id: 3,
     date: "24 January, 2022",
     name: "Mentor & Mentee Registration Ends",
-    desc: "Hope all mentors & mentees have registered themselves & submitted their projects",
+    desc: "<b>Registration for both mentee and mentor is being extended. Register Now !!</b>",
 
     completeClass: "",
-    completeStyle: "",
+    completeStyle: "display:none",
     daysLeft: Math.floor(
       (new Date("24 January, 2022 23:59:59").getTime() - intDate) / intValue + 1,
     ),

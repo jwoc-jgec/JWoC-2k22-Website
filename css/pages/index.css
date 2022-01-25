@@ -1043,6 +1043,11 @@ section#timeline div.details .events .event_card p {
   letter-spacing: 0.6px;
 }
 
+section#timeline div.details .events .event_card p b {
+  color: #F90716;
+  font-weight: 600;
+}
+
 /* **************************** Responsive **************************** */
 
 @media (max-width: 1240px) {
