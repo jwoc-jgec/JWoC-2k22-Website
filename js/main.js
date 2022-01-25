@@ -9,6 +9,11 @@ $(window).on("load", () => {
     visibility: "hidden",
     transitionDelay: isNotFirst ? "0s" : "4s",
   });
+  isNotFirst
+    ? $("section#notice_banner").removeClass("active")
+    : setTimeout(() => {
+        $("section#notice_banner").addClass("active");
+      }, 4200);
   sessionStorage.setItem(isNotFirstKey, true);
 });
 
@@ -97,6 +102,12 @@ setInterval(function () {
 
 $("div#form_modal i#modal_close").click(function () {
   $("div#form_modal").removeClass("active");
+});
+
+// Notice Modal CLose *********************************************
+
+$("section#notice_banner div#notice_close").click(function () {
+  $("section#notice_banner").removeClass("active");
 });
 
 // Search Function of PROJECTS *********************************************
