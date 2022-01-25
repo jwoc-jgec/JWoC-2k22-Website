@@ -34,7 +34,7 @@ let eventsTimeline = [
   },
   {
     id: 3,
-    date: "24 January, 2022",
+    date: "28 January, 2022",
     name: "Mentor & Mentee Registration Ends",
     desc: "<b>Registration for both mentee and mentor is being extended. Register Now !!</b>",
 
@@ -50,8 +50,8 @@ let eventsTimeline = [
     name: "Projects Announcement Begins",
     desc: "The wait is over! We are going to reveal the selected projects",
 
-    completeClass: "",
-    completeStyle: "",
+    completeClass: "bx bx-check",
+    completeStyle: "display:none",
     daysLeft: Math.floor(
       (new Date("25 January, 2022 23:59:59").getTime() - intDate) / intValue + 1,
     ),
