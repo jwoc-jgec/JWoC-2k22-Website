@@ -61,12 +61,6 @@ $(".goBack").click(function () {
   window.history.back();
 });
 
-// Discord Modal CLose *********************************************
-
-$("div#form_modal i#modal_close").click(function () {
-  $("div#form_modal").removeClass("active");
-});
-
 // Count Down Function *********************************************
 
 function countTimer() {
@@ -98,3 +92,20 @@ function countTimer() {
 setInterval(function () {
   countTimer();
 }, 1000);
+
+// Discord Modal CLose *********************************************
+
+$("div#form_modal i#modal_close").click(function () {
+  $("div#form_modal").removeClass("active");
+});
+
+// Search Function of PROJECTS *********************************************
+
+$("form.searchTech input#search").on("keyup", function () {
+  let value = $(this).val().toLowerCase();
+  $("div.project_card").filter(function () {
+    $(this).toggle(
+      $(this).find(".project_desc .tags span").text().toLowerCase().indexOf(value) > -1,
+    );
+  });
+});
