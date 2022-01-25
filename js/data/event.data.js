@@ -34,18 +34,6 @@ let eventsTimeline = [
   },
   {
     id: 3,
-    date: "28 January, 2022",
-    name: "Mentor & Mentee Registration Ends",
-    desc: "<b>Registration for both mentee and mentor is being extended. Register Now !!</b>",
-
-    completeClass: "",
-    completeStyle: "display:none",
-    daysLeft: Math.floor(
-      (new Date("24 January, 2022 23:59:59").getTime() - intDate) / intValue + 1,
-    ),
-  },
-  {
-    id: 4,
     date: "25 January, 2022",
     name: "Projects Announcement Begins",
     desc: "The wait is over! We are going to reveal the selected projects",
@@ -54,6 +42,18 @@ let eventsTimeline = [
     completeStyle: "display:none",
     daysLeft: Math.floor(
       (new Date("25 January, 2022 23:59:59").getTime() - intDate) / intValue + 1,
+    ),
+  },
+  {
+    id: 4,
+    date: "28 & 30 January, 2022",
+    name: "Mentor & Mentee Registration Ends",
+    desc: "<b>Registration for both mentor and mentee is being extended, respectively. Register Now !!</b>",
+
+    completeClass: "",
+    completeStyle: "display:none",
+    daysLeft: Math.floor(
+      (new Date("28 January, 2022 23:59:59").getTime() - intDate) / intValue + 1,
     ),
   },
   {

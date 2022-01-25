@@ -263,7 +263,7 @@ div.project_card .project_desc span {
 
 div.project_card .project_desc a.btn {
   margin: 1rem auto 2rem;
-  padding: 0.6rem 2rem;
+  padding: 0.6rem 1.2rem;
   font-size: 2rem;
   font-weight: 500;
   font-family: var(--codefont);
@@ -338,7 +338,7 @@ div.project_card div#toggleBtn.active + .mentor_desc h4 {
 
 div.project_card .mentor_desc h2 {
   position: relative;
-  margin: 1rem auto 1.5rem;
+  margin: 1rem auto 1.2rem;
   font-size: 2.6rem;
   font-weight: 500;
   font-family: var(--codefont);
@@ -359,7 +359,7 @@ div.project_card .mentor_desc h2::after {
   position: absolute;
   left: 0;
   bottom: -20%;
-  height: 4px;
+  height: 3px;
   width: 100%;
   border-radius: 4px;
   background: var(--darkwhite);
@@ -445,11 +445,6 @@ div.project_card .mentor_desc .social a.btn:hover i {
 @media (max-width: 992px) {
   section#projects_container div.projects_content {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  div.project_card .project_desc h2,
-  div.project_card .mentor_desc h2 {
-    font-size: 2.8rem;
   }
 }
 

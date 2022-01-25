@@ -2234,6 +2234,7 @@ section#notice_banner .post p {
 }
 
 section#notice_banner .post p span {
+  display: inline-block;
   font-weight: 600;
   color: var(--primarylight);
 }
@@ -2248,7 +2249,7 @@ section#notice_banner .post a.btn {
   margin: 1rem 0.5rem;
   padding: 0.8rem 1.6rem;
   font-size: 1.8rem;
-  font-weight: 400;
+  font-weight: 500;
   font-family: var(--codefont);
   color: var(--darkwhite);
   background: var(--primarylight);
@@ -2286,9 +2287,6 @@ section#notice_banner .post a.btn:hover {
   section#notice_banner .post h4 {
     margin: 0;
     font-size: 2rem;
-  }
-  section#notice_banner .post h3 {
-    font-size: 1.6rem;
   }
 }
 
