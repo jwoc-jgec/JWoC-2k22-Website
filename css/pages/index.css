@@ -1193,6 +1193,91 @@ section#projects div.timer .time p {
   text-transform: uppercase;
 }
 
+/* ================ Projects Content ================ */
+
+section#projects div.details {
+  margin: 4rem auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+section#projects div.details .content {
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+section#projects div.details .content h2 {
+  position: relative;
+  margin: 2rem 0;
+  font-size: 4rem;
+  font-weight: 500;
+  font-family: var(--codefont);
+  color: var(--lightblack);
+  text-align: left;
+  letter-spacing: 0.5px;
+}
+
+section#projects div.details .content h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+  height: 0.6rem;
+  width: 100%;
+  background: linear-gradient(45deg, var(--primarylight), var(--darkwhite));
+  border-radius: 4px;
+}
+
+section#projects div.details .content p {
+  margin: 1rem 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+  font-family: var(--mainfont);
+  color: var(--lightblack);
+  text-align: justify;
+  letter-spacing: 0.5px;
+  line-height: 1.7;
+}
+
+section#projects div.details .content a {
+  margin: 2rem 0 1rem;
+  padding: 0.6rem 2rem;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: var(--codefont);
+  color: var(--darkwhite);
+  background: var(--primarylight);
+  letter-spacing: 0.6px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+section#projects div.details .content a:hover {
+  background: var(--primarydark);
+}
+
+section#projects div.details .figure {
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section#projects div.details .figure img {
+  margin: auto;
+  width: 70%;
+  height: auto;
+}
+
 /* **************************** Responsive **************************** */
 
 @media (max-width: 992px) {
@@ -1207,6 +1292,20 @@ section#projects div.timer .time p {
   }
   section#projects div.figure img {
     width: 60%;
+  }
+
+  section#projects div.details {
+    margin: 0 auto;
+    padding: 2rem 4rem;
+  }
+  section#projects div.details .content h2 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  section#projects div.details .figure img {
+    width: 100%;
   }
 }
 
@@ -1996,6 +2095,212 @@ section#contact div.platforms .social_box a:hover {
 @media (max-width: 472px) {
   section#contact div.heading {
     margin: auto 2rem;
+  }
+}
+
+/* **************************** Notice Banner Section **************************** */
+
+section#notice_banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+section#notice_banner.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* **************************** Notice Close Btn **************************** */
+
+section#notice_banner div#notice_close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 4rem;
+  color: #ff3838;
+  cursor: pointer;
+}
+
+/* **************************** Confetti Canvas **************************** */
+
+section#notice_banner canvas {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100;
+  height: 100%;
+  z-index: -1;
+  clip-path: circle(0% at 50% 0);
+  transition: all 0.6s cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+section#notice_banner.active canvas {
+  clip-path: circle(100% at 50% 0);
+}
+
+/* **************************** Container **************************** */
+
+section#notice_banner .container {
+  position: relative;
+  margin: 1rem;
+  padding: 1rem;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--lightwhite);
+  border-radius: 10px;
+  transform: scale(0);
+  transition: all 0.8s cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+section#notice_banner.active .container {
+  transform: scale(1);
+}
+
+section#notice_banner .container::before {
+  content: "";
+  position: absolute;
+  width: 0.5rem;
+  height: 90%;
+  border-radius: 50%;
+  background: rgba(50, 69, 107, 0.2);
+}
+
+/* **************************** Notice Post **************************** */
+
+section#notice_banner .post {
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background: var(--lightwhite);
+}
+
+section#notice_banner .post h2 {
+  margin: 1rem auto 1.5rem;
+  font-size: 4rem;
+  font-weight: 600;
+  font-family: "Blanka", var(--codefont);
+  color: var(--lightblack);
+  text-align: center;
+  letter-spacing: 4px;
+  text-shadow: 1px 1px var(--primaryoff),
+          2px 2px var(--primaryoff),
+          3px 3px var(--primaryoff);
+}
+
+section#notice_banner .post h4 {
+  margin: 1rem auto;
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: var(--codefont);
+  color: var(--lightblack);
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+
+section#notice_banner .post h3 {
+  margin: 0.5rem auto;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: var(--codefont);
+  color: var(--lightblack);
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+
+section#notice_banner .post p {
+  margin: 1rem auto;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: var(--codefont);
+  color: var(--darkgrey);
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+
+section#notice_banner .post p span {
+  font-weight: 600;
+  color: var(--primarylight);
+}
+
+section#notice_banner .post div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section#notice_banner .post a.btn {
+  margin: 1rem 0.5rem;
+  padding: 0.8rem 1.6rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: var(--codefont);
+  color: var(--darkwhite);
+  background: var(--primarylight);
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  letter-spacing: 0.6px;
+  transition: all 0.2s ease;
+}
+
+section#notice_banner .post a.btn:hover {
+  background: var(--primarydark);
+}
+
+/* **************************** Responsive **************************** */
+
+@media (max-width: 1240px) {
+  section#notice_banner .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  section#notice_banner .container::before {
+    width: 90%;
+    height: 0.5rem;
+    top: 52%;
+  }
+  section#notice_banner .post h2 {
+    font-size: 3rem;
+  }
+  section#notice_banner .post h2 br {
+    display: none;
+  }
+  section#notice_banner .post h4 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  section#notice_banner .post h3 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 572px) {
+  section#notice_banner .container {
+    margin: 2rem;
+  }
+  section#notice_banner .post {
+    padding: 1rem;
+  }
+  section#notice_banner .post a.btn {
+    padding: 0.8rem 1.2rem;
   }
 }
 

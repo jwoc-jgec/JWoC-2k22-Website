@@ -9,6 +9,11 @@ $(window).on("load", () => {
     visibility: "hidden",
     transitionDelay: isNotFirst ? "0s" : "4s",
   });
+  isNotFirst
+    ? $("section#notice_banner").removeClass("active")
+    : setTimeout(() => {
+        $("section#notice_banner").addClass("active");
+      }, 4200);
   sessionStorage.setItem(isNotFirstKey, true);
 });
 
@@ -61,12 +66,6 @@ $(".goBack").click(function () {
   window.history.back();
 });
 
-// Discord Modal CLose *********************************************
-
-$("div#form_modal i#modal_close").click(function () {
-  $("div#form_modal").removeClass("active");
-});
-
 // Count Down Function *********************************************
 
 function countTimer() {
@@ -98,3 +97,26 @@ function countTimer() {
 setInterval(function () {
   countTimer();
 }, 1000);
+
+// Discord Modal CLose *********************************************
+
+$("div#form_modal i#modal_close").click(function () {
+  $("div#form_modal").removeClass("active");
+});
+
+// Notice Modal CLose *********************************************
+
+$("section#notice_banner div#notice_close").click(function () {
+  $("section#notice_banner").removeClass("active");
+});
+
+// Search Function of PROJECTS *********************************************
+
+$("form.searchTech input#search").on("keyup", function () {
+  let value = $(this).val().toLowerCase();
+  $("div.project_card").filter(function () {
+    $(this).toggle(
+      $(this).find(".project_desc .tags span").text().toLowerCase().indexOf(value) > -1,
+    );
+  });
+});

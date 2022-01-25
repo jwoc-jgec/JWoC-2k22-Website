@@ -16,6 +16,7 @@
     "dist/": true
   },
   "prettier.tabWidth": 2,
+  "prettier.printWidth": 100,
   "prettier.semi": true,
   "prettier.singleQuote": false,
   "prettier.jsxSingleQuote": false
