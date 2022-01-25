@@ -96,12 +96,19 @@
         <h2>Our Projects</h2>
         <p>Our projects available for contribution by registered mentees.</p>
       </div>
-    
-      <form class="searchTech">
-        <input type="search" id="search" name="search" class="form-control"
-          placeholder="Search for a tech stacks and get your project!" required autocomplete="off" />
+
+      <form class="searchTech" id="searchForm">
+        <input
+          type="search"
+          id="search"
+          name="search"
+          class="form-control"
+          placeholder="Search for a tech stacks and get your project!"
+          required
+          autocomplete="off"
+        />
       </form>
-    
+
       <div class="projects_content">
         <!-- All Projects Mapped: "projects.data.js" -->
       </div>
@@ -124,5 +131,10 @@
       </div>
     </footer>
     <!-- Footer End -->
+
+    <script>
+      const searchForm = document.getElementById("searchForm");
+      searchForm.addEventListener("submit", (e) => e.preventDefault());
+    </script>
   </body>
 </html>
