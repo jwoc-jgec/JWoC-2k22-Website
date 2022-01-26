@@ -103,11 +103,16 @@
           id="search"
           name="search"
           class="form-control"
-          placeholder="Search for tech stacks or project name!"
+          placeholder="Search for tech stack or project or mentor name!"
           required
           autocomplete="off"
         />
       </form>
+
+      <div class="spinner" id="spinner">
+        <div class="cube1"></div>
+        <div class="cube2"></div>
+      </div>
 
       <div class="projects_content">
         <!-- All Projects Mapped: "projects.data.js" -->
@@ -135,10 +140,5 @@
       </div>
     </footer>
     <!-- Footer End -->
-
-    <script>
-      const searchForm = document.getElementById("searchForm");
-      searchForm.addEventListener("submit", (e) => e.preventDefault());
-    </script>
   </body>
 </html>
