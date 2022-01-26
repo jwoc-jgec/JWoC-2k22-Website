@@ -109,23 +109,3 @@ $("div#form_modal i#modal_close").click(function () {
 $("section#notice_banner div#notice_close").click(function () {
   $("section#notice_banner").removeClass("active");
 });
-
-// Search Function of PROJECTS *********************************************
-
-$("form.searchTech input#search").on("keyup", function () {
-  let value = $(this).val().toLowerCase();
-  $("div.project_card").filter(function () {
-    $(this).toggle(
-      $(this).find(".project_desc .tags span").text().toLowerCase().indexOf(value) > -1,
-    );
-  });
-});
-
-$("form.searchTech input#search").on("keyup", function () {
-  let value = $(this).val().toLowerCase();
-  $("div.project_card").filter(function () {
-    $(this).toggle(
-      $(this).find(".project_desc h2").text().toLowerCase().indexOf(value) > -1,
-    );
-  });
-});
