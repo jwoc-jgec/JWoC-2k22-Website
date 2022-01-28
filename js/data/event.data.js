@@ -62,8 +62,8 @@ let eventsTimeline = [
     name: "Community Bonding Starts",
     desc: "Interact with your mentors and get to know about the projects",
 
-    completeClass: "",
-    completeStyle: "",
+    completeClass: "bx bx-check",
+    completeStyle: "display:none",
     daysLeft: Math.floor(
       (new Date("28 January, 2022 23:59:59").getTime() - intDate) / intValue + 1,
     ),
