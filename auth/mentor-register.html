@@ -53,7 +53,7 @@
     <link rel="stylesheet" href="../css/components/settings.css" />
     <link rel="stylesheet" href="../css/components/footer.css" />
     <link rel="stylesheet" href="../css/components/header.css" />
-    <link rel="stylesheet" href="../css/pages/auth.css" />
+    <link rel="stylesheet" href="../css/pages/soon.css" />
 
     <!-- External JS -->
     <script defer src="../js/libraries/jquery-3.6.0.min.js"></script>
@@ -65,7 +65,6 @@
 
     <!-- Main JS -->
     <script defer src="../js/main.js"></script>
-    <script defer src="../js/auth/mentor.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ESEG18CYHY"></script>
@@ -81,14 +80,6 @@
   </head>
 
   <body>
-    <!-- Full screen loader -->
-    <div id="loader">
-      <div class="spinner">
-        <div class="bounce1"></div>
-        <div class="bounce2"></div>
-        <div class="bounce3"></div>
-      </div>
-    </div>
 
     <!-- Header Navbar Start -->
     <header class="default">
@@ -107,197 +98,18 @@
     <!-- Header Navbar End -->
 
     <!-- Banner Start -->
-    <section id="auth_register">
+    <section id="comingsoon">
       <div class="sub_head">
         <h2>Mentor's Registration</h2>
-        <p>Register yourselves as mentor for your project.</p>
-        <img src="/assets/img/winter_text.png" alt="Winter Text" />
+        <p>JWoC, Mentor registration were closed!</p>
       </div>
 
-      <form id="auth_form" class="container" name="mentor-registration">
-        <div class="form-group">
-          <label for="name">Your Name <span>*</span></label>
-          <p>How do we know you?</p>
-          <input type="text" class="form-control" placeholder="" id="name" name="Name" required />
-        </div>
-
-        <div class="form-group">
-          <label for="email">Email Address <span>*</span></label>
-          <p>Your email address through which we can contact :)</p>
-          <input
-            type="email"
-            class="form-control"
-            placeholder=""
-            id="email"
-            name="Email"
-            required
-          />
-        </div>
-
-        <div class="form-group">
-          <label for="phone">Phone Number <span>*</span></label>
-          <p>We will call you, only if required!</p>
-          <input type="tel" class="form-control" placeholder="" id="phone" name="Phone" required />
-        </div>
-
-        <div class="form-group">
-          <label for="whatsapp">WhatsApp Number <span>*</span></label>
-          <p>We will text you, only if required!</p>
-          <input
-            type="tel"
-            class="form-control"
-            placeholder=""
-            id="whatsapp"
-            name="Whatsapp"
-            required
-          />
-        </div>
-
-        <div class="form-group">
-          <label for="college">College <span>*</span></label>
-          <p>Where do you study?</p>
-          <input
-            type="text"
-            class="form-control"
-            placeholder=""
-            id="college"
-            name="College"
-            required
-          />
-        </div>
-
-        <div class="form-group">
-          <label for="year">Current Year <span>*</span></label>
-          <p>What is your current year of study?</p>
-
-          <select name="year" id="year" required>
-            <option value="1">1st Year</option>
-            <option value="2">2nd Year</option>
-            <option value="3">3rd Year</option>
-            <option value="4">4th Year</option>
-            <option value="0">Others</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="github">GitHub Profile Link <span>*</span></label>
-          <p>Please share your GitHub profile</p>
-          <input
-            type="url"
-            class="form-control"
-            placeholder=""
-            id="github"
-            name="GitHub"
-            required
-          />
-        </div>
-
-        <div class="form-group">
-          <label for="linkedIn">LinkedIn Profile Link <span>*</span></label>
-          <p>Please share your LinkedIn profile</p>
-          <input
-            type="url"
-            class="form-control"
-            placeholder=""
-            id="linkedIn"
-            name="LinkedIn"
-            required
-          />
-        </div>
-
-        <div class="form-group">
-          <label for="projectName">Project Name <span>*</span></label>
-          <p>What are you working on?</p>
-          <input
-            type="text"
-            class="form-control"
-            placeholder=""
-            id="projectName"
-            name="ProjectName"
-            required
-          />
-        </div>
-
-        <div class="form-group">
-          <label for="projectLink">Project Link <span>*</span></label>
-          <p>Please share your project's GitHub link</p>
-          <input
-            type="url"
-            class="form-control"
-            placeholder=""
-            id="projectLink"
-            name="ProjectLink"
-            required
-          />
-        </div>
-
-        <div class="form-group">
-          <label for="projectLink">Tech Stack of your project <span>*</span></label>
-          <p>Mention the tech stack of your project!</p>
-          <input type="text" id="projectTags" data-role="tagsinput" />
-        </div>
-
-        <div class="form-group">
-          <label for="projectDescription">Project Description <span>*</span></label>
-          <p>What is your project all about !</p>
-          <textarea
-            class="form-control"
-            placeholder=""
-            id="projectDescription"
-            name="ProjectDesc"
-            rows="4"
-            required
-          ></textarea>
-        </div>
-
-        <div class="form-group">
-          <label for="answer1"
-            >Do you have any previous mentorship experience? <span>*</span></label
-          >
-          <p>Your experience adds value!</p>
-          <textarea
-            class="form-control"
-            placeholder=""
-            id="answer1"
-            name="answer1"
-            rows="4"
-            required
-          ></textarea>
-        </div>
-
-        <div class="form-group">
-          <label for="answer2"
-            >What drives you for contributing to Open Source? <span>*</span></label
-          >
-          <p>We would like to know about your vision!</p>
-          <textarea
-            class="form-control"
-            placeholder=""
-            id="answer2"
-            name="answer2"
-            rows="4"
-            required
-          ></textarea>
-        </div>
-
-        <label class="form-group input-checkbox" for="manualCheckbox">
-          <input
-            type="checkbox"
-            id="manualCheckbox"
-            name="manualCheckbox"
-            value="Manual Accepted"
-            required
-          />
-          <div><i class="bx bx-check"></i></div>
-          <h5>
-            I have read the
-            <a href="../docs/mentor-manual.html" target="_blank">mentors' manual</a> and will follow
-            the rules & regulations. <span>*</span>
-          </h5>
-        </label>
-
-        <button type="submit" class="btn btn-auth">Register Now</button>
-      </form>
+      <div class="comingsoon container">
+        <img src="../assets/img/registration_closed.svg" alt="Reg Close Img" class="close_img" />
+        <h4>JWoC 2K22, Mentor registration were closed!</h4>
+        <p>This year mentor registration closed, wait till next year.</p>
+        <a href="./" class="btn">Go To Home</a>
+      </div>
     </section>
     <!-- Banner End -->
 
