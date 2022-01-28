@@ -94,35 +94,33 @@ let eventsTimeline = [
   },
   {
     id: 8,
-    date: "20 February, 2022",
-    name: "Phase I Completion",
-    desc: "The first phase of the event ends here!",
+    date: "1 March, 2022",
+    name: "Phase II Begins, End of Phase I",
+    desc: "The first phase of the event ends here & second phase starts!",
 
     completeClass: "",
     completeStyle: "",
-    daysLeft: Math.floor(
-      (new Date("20 February, 2022 23:59:59").getTime() - intDate) / intValue + 1,
-    ),
+    daysLeft: Math.floor((new Date("1 March, 2022 23:59:59").getTime() - intDate) / intValue + 1),
   },
   {
     id: 9,
-    date: "2 March, 2022",
+    date: "9 March, 2022",
     name: "Phase II Ends - JWoC Ends",
     desc: "The final stage concludes here!",
 
     completeClass: "",
     completeStyle: "",
-    daysLeft: Math.floor((new Date("2 March, 2022 23:59:59").getTime() - intDate) / intValue + 1),
+    daysLeft: Math.floor((new Date("9 March, 2022 23:59:59").getTime() - intDate) / intValue + 1),
   },
   {
     id: 10,
-    date: "8 March, 2022 (Tentative)",
+    date: "14 March, 2022 (Tentative)",
     name: "Official Result Announcement",
     desc: "Standup for the Champions!",
 
     completeClass: "",
     completeStyle: "",
-    daysLeft: Math.floor((new Date("8 March, 2022 23:59:59").getTime() - intDate) / intValue + 1),
+    daysLeft: Math.floor((new Date("14 March, 2022 23:59:59").getTime() - intDate) / intValue + 1),
   },
 ];
 

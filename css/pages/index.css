@@ -1243,19 +1243,19 @@ section#projects div.details .content p {
   color: var(--lightblack);
   text-align: justify;
   letter-spacing: 0.5px;
-  line-height: 1.7;
+  line-height: 2;
 }
 
 section#projects div.details .content a {
   margin: 2rem 0 1rem;
-  padding: 0.6rem 2rem;
+  padding: 0.8rem 2rem;
   font-size: 2rem;
   font-weight: 500;
   font-family: var(--codefont);
   color: var(--darkwhite);
   background: var(--primarylight);
   letter-spacing: 0.6px;
-  border-radius: 6px;
+  border-radius: 8px;
   transition: all 0.2s ease;
 }
 
