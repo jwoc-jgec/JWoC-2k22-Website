@@ -1534,6 +1534,10 @@ section#sponsors div.details .category {
   align-items: center;
 }
 
+section#sponsors div.details .category.learning {
+  margin: 10rem 2rem;
+}
+
 section#sponsors div.details .category .title {
   position: relative;
   display: flex;
@@ -1555,8 +1559,14 @@ section#sponsors div.details .category .title::after {
 
 section#sponsors div.details .category .title img {
   margin: auto;
-  width: 8rem;
   height: auto;
+}
+
+section#sponsors div.details .category .title img.w5 {
+  width: 5rem;
+}
+section#sponsors div.details .category .title img.w6 {
+  width: 6rem;
 }
 
 section#sponsors div.details .category .title h4 {
@@ -1611,14 +1621,12 @@ section#sponsors div.details .category .sponsors h3 {
   section#sponsors div.sub_head {
     padding: 1rem 6rem;
   }
-  section#sponsors div.details .category {
+  section#sponsors div.details .category,
+  section#sponsors div.details .category.learning {
     margin: 4rem auto;
   }
   section#sponsors div.details .category .title {
     margin: 2rem auto;
-  }
-  section#sponsors div.details .category .title img {
-    width: 7rem;
   }
   section#sponsors div.details .category .title::after {
     display: none;
