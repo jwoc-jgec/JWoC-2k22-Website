@@ -10,7 +10,7 @@ let eventsTimeline = [
     id: 1,
     date: "16 January, 2022",
     name: "JWoC Program Announced",
-    desc: "This is where we set the ball rolling",
+    desc: "This is where we set the ball rolling!",
 
     // completeClass: "bx bx-check",
     // completeStyle: "display:none",
@@ -24,7 +24,7 @@ let eventsTimeline = [
     id: 2,
     date: "16 January, 2022",
     name: "Mentor & Mentee Registration",
-    desc: "Registration begins for Mentors and Mentees",
+    desc: "Registration begins for Mentors and Mentees!",
 
     completeClass: "bx bx-check",
     completeStyle: "display:none",
@@ -36,7 +36,7 @@ let eventsTimeline = [
     id: 3,
     date: "25 January, 2022",
     name: "Projects Announcement Begins",
-    desc: "The wait is over! We are going to reveal the selected projects",
+    desc: "The wait is over! We are going to reveal the selected projects.",
 
     completeClass: "bx bx-check",
     completeStyle: "display:none",
@@ -60,7 +60,7 @@ let eventsTimeline = [
     id: 5,
     date: "28 January, 2022",
     name: "Community Bonding Starts",
-    desc: "Interact with your mentors and get to know about the projects",
+    desc: "Interact with your mentors and get to know about the projects.",
 
     completeClass: "bx bx-check",
     completeStyle: "display:none",

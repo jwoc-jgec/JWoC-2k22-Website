@@ -890,11 +890,14 @@ section#timeline div.details .fig {
   position: sticky;
   top: 0;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 section#timeline div.details .fig img {
   margin: auto;
-  width: 100%;
+  width: 85%;
   height: auto;
   z-index: -1;
 }
@@ -1059,9 +1062,6 @@ section#timeline div.details .events .event_card p b {
   }
   section#timeline div.details .fig {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   section#timeline div.details .fig img {
     width: 50%;
