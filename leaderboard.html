@@ -51,13 +51,14 @@
     <link rel="stylesheet" href="./css/components/settings.css" />
     <link rel="stylesheet" href="./css/components/footer.css" />
     <link rel="stylesheet" href="./css/components/header.css" />
-    <link rel="stylesheet" href="./css/pages/soon.css" />
+    <link rel="stylesheet" href="./css/pages/leaderboard.css" />
 
     <!-- External JS -->
     <script defer src="./js/libraries/jquery-3.6.0.min.js"></script>
 
     <!-- Main JS -->
     <script defer src="./js/main.js"></script>
+    <script defer src="./js/data/leaderboard.data.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ESEG18CYHY"></script>
@@ -90,17 +91,47 @@
     <!-- Header Navbar End -->
 
     <!-- Banner Start -->
-    <section id="comingsoon">
+    <section id="leaderboard">
       <div class="sub_head">
         <h2>Leaderboard</h2>
         <p>Check your rank here!</p>
       </div>
-
-      <div class="comingsoon container">
-        <img src="./assets/img/coming_soon.svg" alt="Coming Soon Img" class="soon_img" />
-        <h4>You will get your rank once the event started!</h4>
-        <p>Till then checkout our schedule timeline.</p>
-        <a href="./" class="btn">Go To Home</a>
+    
+      <div class="leaderboard container">
+        <!-- Winners -->
+        <div class="winners">
+          <!-- All Winners Mapped: "leaderboard.data.js" -->
+        </div>
+    
+        <!-- Search -->
+        <form class="searchUser">
+          <input
+            type="search"
+            id="search"
+            name="search"
+            class="form-control"
+            placeholder="Enter your github username!"
+            required
+            autocomplete="off"
+          />
+        </form>
+    
+        <!-- Ranks -->
+        <div class="rank_table">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Rank</th>
+                <th scope="col">Participant Name</th>
+                <th scope="col">Github Handle</th>
+                <th scope="col">Points</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- All Ranks Mapped: "leaderboard.data.js" -->
+            </tbody>
+          </table>
+        </div>
       </div>
     </section>
     <!-- Banner End -->
