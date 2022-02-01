@@ -74,8 +74,8 @@ let eventsTimeline = [
     name: "Community Bonding Ends",
     desc: "From now on we will work together!",
 
-    completeClass: "",
-    completeStyle: "",
+    completeClass: "bx bx-check",
+    completeStyle: "display:none",
     daysLeft: Math.floor(
       (new Date("31 January, 2022 23:59:59").getTime() - intDate) / intValue + 1,
     ),
@@ -86,8 +86,8 @@ let eventsTimeline = [
     name: "Coding Period Starts",
     desc: "Finally the moment is here, You can start working on your desired projects. Code Hard!",
 
-    completeClass: "",
-    completeStyle: "",
+    completeClass: "bx bx-check",
+    completeStyle: "display:none",
     daysLeft: Math.floor(
       (new Date("1 February, 2022 23:59:59").getTime() - intDate) / intValue + 1,
     ),
