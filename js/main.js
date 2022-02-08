@@ -106,6 +106,6 @@ $("div#form_modal i#modal_close").click(function () {
 
 // Notice Modal CLose *********************************************
 
-$("section#notice_banner div#notice_close").click(function () {
+$("section#notice_banner i#notice_close").click(function () {
   $("section#notice_banner").removeClass("active");
 });

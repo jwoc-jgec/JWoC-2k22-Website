@@ -57,6 +57,7 @@
     <!-- External JS -->
     <script defer src="./js/libraries/jquery-3.6.0.min.js"></script>
     <script defer src="./js/libraries/particles.min.js"></script>
+    <script defer src="./js/libraries/confetti.min.js"></script>
 
     <!-- Main JS -->
     <script defer src="./js/sketch.app.js"></script>
@@ -455,13 +456,13 @@
           </div>
         </div>
 
-        <div class="category media row">
+        <div class="category certificate row">
           <div class="title col-lg-3">
-            <img src="./assets/img/media.png" alt="Media Partner" class="w5" />
+            <img src="./assets/img/certificate.png" alt="Certificate Partner" class="w5" />
             <h4>Certificate Partner</h4>
           </div>
           <div class="sponsors col-lg-9">
-            <!-- All Media Partner Mapped: "sponsors.data.js" -->
+            <!-- All Certificate Partner Mapped: "sponsors.data.js" -->
           </div>
         </div>
 
@@ -570,33 +571,15 @@
     <!-- Notice Banner Start -->
     <!--
     <section id="notice_banner">
-      <div class="container row">
-        <div class="col-lg-6 post">
-          <h4>Hola, Developers!</h4>
-          <h2>Good News</h2>
-          <p>
-            Registration is being extended for both, <br />
-            Here we go <span>Mentee: 30 Jan</span> & <span>Mentor: 28 Jan</span>
-          </p>
-          <h3>Register Now!!</h3>
-          <div>
-            <a href="./auth/student-register" class="btn">Mentees' Here</a>
-            <a href="./auth/mentor-register" class="btn">Mentors' Here</a>
-          </div>
-        </div>
+      <div class="notice_modal">
+        <h2>Leaderboard <br/> Out!</h2>
+        <h4>Hey, Developers!</h4>
+        <p>Check your ranks till now and compete hard!</p>
+        <a href="#" target="_blank">See Leaderboard</a>
+        <i class="bx bxs-message-square-x" id="notice_close"></i>
 
-        <div class="col-lg-6 post">
-          <h4>Hey, Creative Minds!</h4>
-          <h2>
-            Projects <br />
-            Announced
-          </h2>
-          <p>Here we go, check out the announced projects and more coming soon!</p>
-          <a href="./projects" class="btn">Explore Now</a>
-        </div>
       </div>
-
-      <div class="bx bxs-message-square-x" id="notice_close"></div>
+      <canvas id="confetti-canvas"></canvas>
     </section>
     -->
     <!-- Notice Banner End -->

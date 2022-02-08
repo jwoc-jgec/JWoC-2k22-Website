@@ -106,9 +106,9 @@ let communityPartnerData = [
   },
 ];
 
-// Media Partner
+// Certificate Partner
 
-let mediaPartnerData = [
+let certificatePartnerData = [
   {
     id: 1,
     name: "Give My Certificate",
@@ -138,7 +138,7 @@ let diamondTierContent = document.querySelector("div.diamond div.sponsors");
 let goldTierContent = document.querySelector("div.gold div.sponsors");
 let silverTierContent = document.querySelector("div.silver div.sponsors");
 let communityPartnerContent = document.querySelector("div.community div.sponsors");
-let mediaPartnerContent = document.querySelector("div.media div.sponsors");
+let certificatePartnerContent = document.querySelector("div.certificate div.sponsors");
 let learningPartnerContent = document.querySelector("div.learning div.sponsors");
 
 // Diamond Tier Preview
@@ -181,10 +181,10 @@ Object.values(communityPartnerData).map((val) => {
   `;
 });
 
-// Media Partner Preview
+// Certificate Partner Preview
 
-Object.values(mediaPartnerData).map((val) => {
-  mediaPartnerContent.innerHTML += `
+Object.values(certificatePartnerData).map((val) => {
+  certificatePartnerContent.innerHTML += `
     <a href="${val.link}" target="_blank">
       <img src="${val.img}" alt="${val.name}" class="${val.width}" />
     </a>

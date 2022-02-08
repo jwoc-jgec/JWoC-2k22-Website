@@ -584,7 +584,7 @@ section#stats div.stats {
   padding: 8rem 2rem;
   background: rgba(62, 100, 255, 0.9) url(../../assets/img/pattern_bg.png) fixed center / 80%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 30rem);
+  grid-template-columns: repeat(auto-fit, 30rem);
   place-content: center;
   place-items: center;
   gap: 2rem;
@@ -1232,7 +1232,7 @@ section#projects div.details .content p {
   color: var(--lightblack);
   text-align: justify;
   letter-spacing: 0.5px;
-  line-height: 2;
+  line-height: 1.8;
 }
 
 section#projects div.details .content a {
@@ -2106,7 +2106,7 @@ section#notice_banner {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.7);
   z-index: 100;
   opacity: 0;
   visibility: hidden;
@@ -2118,76 +2118,29 @@ section#notice_banner.active {
   visibility: visible;
 }
 
-/* **************************** Notice Close Btn **************************** */
-
-section#notice_banner div#notice_close {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  font-size: 4rem;
-  color: #ff3838;
-  cursor: pointer;
-}
-
-/* **************************** Confetti Canvas **************************** */
-
-section#notice_banner canvas {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100;
-  height: 100%;
-  z-index: -1;
-  clip-path: circle(0% at 50% 0);
-  transition: all 0.6s cubic-bezier(0.87, 0, 0.13, 1);
-}
-
-section#notice_banner.active canvas {
-  clip-path: circle(100% at 50% 0);
-}
-
-/* **************************** Container **************************** */
-
-section#notice_banner .container {
+section#notice_banner div.notice_modal {
   position: relative;
   margin: 1rem;
-  padding: 1rem;
-  width: 70%;
+  padding: 2rem 4rem;
+  width: 50rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background: var(--lightwhite);
   border-radius: 10px;
+  z-index: 1;
   transform: scale(0);
-  transition: all 0.8s cubic-bezier(0.87, 0, 0.13, 1);
+  transition: all 0.6s cubic-bezier(0.87, 0, 0.13, 1);
 }
 
-section#notice_banner.active .container {
+section#notice_banner.active div.notice_modal {
   transform: scale(1);
 }
 
-section#notice_banner .container::before {
-  content: "";
-  position: absolute;
-  width: 0.5rem;
-  height: 90%;
-  border-radius: 50%;
-  background: rgba(50, 69, 107, 0.2);
-}
+/* ==================== Notice Modal Contents ==================== */
 
-/* **************************** Notice Post **************************** */
-
-section#notice_banner .post {
-  margin: auto;
-  padding: 2rem;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  background: var(--lightwhite);
-}
-
-section#notice_banner .post h2 {
+div.notice_modal h2 {
   margin: 1rem auto 1.5rem;
   font-size: 4rem;
   font-weight: 600;
@@ -2200,7 +2153,7 @@ section#notice_banner .post h2 {
           3px 3px var(--primaryoff);
 }
 
-section#notice_banner .post h4 {
+div.notice_modal h4 {
   margin: 1rem auto;
   font-size: 3rem;
   font-weight: 500;
@@ -2210,42 +2163,20 @@ section#notice_banner .post h4 {
   letter-spacing: 0.2px;
 }
 
-section#notice_banner .post h3 {
-  margin: 0.5rem auto;
+div.notice_modal p {
+  margin: 1rem auto;
   font-size: 2rem;
   font-weight: 500;
   font-family: var(--codefont);
-  color: var(--lightblack);
-  text-align: center;
-  letter-spacing: 0.2px;
-}
-
-section#notice_banner .post p {
-  margin: 1rem auto;
-  font-size: 2rem;
-  font-weight: 400;
-  font-family: var(--codefont);
   color: var(--darkgrey);
   text-align: center;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.4px;
 }
 
-section#notice_banner .post p span {
-  display: inline-block;
-  font-weight: 600;
-  color: var(--primarylight);
-}
-
-section#notice_banner .post div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-section#notice_banner .post a.btn {
+div.notice_modal a {
   margin: 1rem 0.5rem;
   padding: 0.8rem 1.6rem;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 500;
   font-family: var(--codefont);
   color: var(--darkwhite);
@@ -2257,45 +2188,39 @@ section#notice_banner .post a.btn {
   transition: all 0.2s ease;
 }
 
-section#notice_banner .post a.btn:hover {
+div.notice_modal a:hover {
   background: var(--primarydark);
+}
+
+div.notice_modal i.bx {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 3.4rem;
+  color: #ff3838;
+  cursor: pointer;
+}
+
+section#notice_banner canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 /* **************************** Responsive **************************** */
 
-@media (max-width: 1240px) {
-  section#notice_banner .container {
-    width: 100%;
+@media (max-width: 572px) {
+  section#notice_banner div.notice_modal {
+    padding: 2rem;
   }
-}
-
-@media (max-width: 992px) {
-  section#notice_banner .container::before {
-    width: 90%;
-    height: 0.5rem;
-    top: 52%;
-  }
-  section#notice_banner .post h2 {
+  div.notice_modal h2 {
     font-size: 3rem;
   }
-  section#notice_banner .post h2 br {
-    display: none;
-  }
-  section#notice_banner .post h4 {
-    margin: 0;
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 572px) {
-  section#notice_banner .container {
-    margin: 2rem;
-  }
-  section#notice_banner .post {
-    padding: 1rem;
-  }
-  section#notice_banner .post a.btn {
-    padding: 0.8rem 1.2rem;
+  div.notice_modal h4 {
+    font-size: 2.4rem;
   }
 }
 
