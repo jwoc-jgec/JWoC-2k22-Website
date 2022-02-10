@@ -57,6 +57,12 @@ section#comingsoon div.comingsoon img.soon_img {
   height: auto;
 }
 
+section#comingsoon div.comingsoon img.leaderboard_img {
+  margin: auto auto 2rem;
+  width: 30%;
+  height: auto;
+}
+
 section#comingsoon div.comingsoon img.close_img {
   margin: auto auto 2rem;
   width: 30%;
@@ -115,7 +121,8 @@ section#comingsoon div.comingsoon a:hover {
 
 @media (max-width: 992px) {
   section#comingsoon div.comingsoon img.soon_img,
-  section#comingsoon div.comingsoon img.close_img {
+  section#comingsoon div.comingsoon img.close_img,
+  section#comingsoon div.comingsoon img.leaderboard_img {
     width: 80%;
   }
 }
