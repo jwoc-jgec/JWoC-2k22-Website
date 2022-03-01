@@ -98,8 +98,8 @@ let eventsTimeline = [
     name: "Phase II Begins, End of Phase I",
     desc: "The first phase of the event ends here & second phase starts!",
 
-    completeClass: "",
-    completeStyle: "",
+    completeClass: "bx bx-check",
+    completeStyle: "display:none",
     daysLeft: Math.floor((new Date("1 March, 2022 23:59:59").getTime() - intDate) / intValue + 1),
   },
   {
