@@ -108,13 +108,13 @@ let eventsTimeline = [
     name: "Phase II Ends - JWoC Ends",
     desc: "The final stage concludes here!",
 
-    completeClass: "",
-    completeStyle: "",
+    completeClass: "bx bx-check",
+    completeStyle: "display:none",
     daysLeft: Math.floor((new Date("9 March, 2022 23:59:59").getTime() - intDate) / intValue + 1),
   },
   {
     id: 10,
-    date: "14 March, 2022 (Tentative)",
+    date: "14 March, 2022",
     name: "Official Result Announcement",
     desc: "Standup for the Champions!",
 
