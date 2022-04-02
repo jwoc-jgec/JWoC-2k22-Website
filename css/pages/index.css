@@ -1035,9 +1035,19 @@ section#timeline div.details .events .event_card p {
   letter-spacing: 0.6px;
 }
 
-section#timeline div.details .events .event_card p b {
-  color: #F90716;
+section#timeline div.details .events .event_card p b,
+section#timeline div.details .events .event_card p a {
+  margin: 0 2px;
+  font-size: 1.7rem;
   font-weight: 600;
+  font-family: var(--codefont);
+  color: #5463FF;
+  font-style: normal;
+  text-decoration: none;
+}
+
+section#timeline div.details .events .event_card p a:hover {
+  color: #FF1818;
 }
 
 /* **************************** Responsive **************************** */
